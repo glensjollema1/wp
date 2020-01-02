@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Assignment 2</title>
-    
+
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
@@ -14,7 +14,11 @@
   <body>
 
     <header>
-      <div>Put company logo and name here</div>
+      <div>
+        <h1>Welcome to Lunardo Cinemas</h1>
+        <!-- Lunardo Logo created using templates and tools at www.FreeLogoDesign.org -->
+        <img src='../../media/Lunardo_logo.png'/>
+        </div>
     </header>
 
     <nav>
@@ -31,7 +35,7 @@
     <footer>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Glen Sjollema S3353578. <a href="https://github.com/glensjollema1/wp.git">Visit the project on GitHub</a> 
+      </script> Glen Sjollema S3353578. <a href="https://github.com/glensjollema1/wp.git">Visit the project on GitHub</a>
       Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
