@@ -1,4 +1,7 @@
 /* Insert your styles here */
+@font-face {
+    /* list fonts to be downloaded and used throughout the page */
+}
 header {
     margin: 0;
     background-color: blue;
@@ -7,7 +10,9 @@ header {
 }
 
 h1 {
-
+    margin: 0;
+    display: inline;
+    text-align: center;
 }
 
 body {
@@ -32,3 +37,4 @@ nav {
 #title {
 
 }
+

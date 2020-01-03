@@ -18,7 +18,7 @@
       <div id="title">
         <h1>Welcome to Lunardo Cinemas</h1>
         <!-- Lunardo Logo created using templates and tools at www.FreeLogoDesign.org -->
-        <img src='../../media/Lunardo_logo.png'/>
+        <img id='logo' src='../../media/Lunardo_logo.png' alt='Lunardo logo'/>
         </div>
     </header>
 
