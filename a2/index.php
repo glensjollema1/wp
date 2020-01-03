@@ -15,7 +15,7 @@
   <body>
 
     <header>
-      <div>
+      <div id="title">
         <h1>Welcome to Lunardo Cinemas</h1>
         <!-- Lunardo Logo created using templates and tools at www.FreeLogoDesign.org -->
         <img src='../../media/Lunardo_logo.png'/>
@@ -23,7 +23,7 @@
     </header>
 
     <nav>
-      <div>Put website navigation links here</div>
+      <div class="links">Put website navigation links here</div>
     </nav>
 
     <main>
