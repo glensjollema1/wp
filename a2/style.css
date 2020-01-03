@@ -1,40 +1,74 @@
 /* Insert your styles here */
-@font-face {
-    /* list fonts to be downloaded and used throughout the page */
-}
 header {
-    margin: 0;
-    background-color: blue;
-    width: 100%;
-    height: 10%;
-}
+    font-size: 300%;
+    font-weight: bold;
+    text-align: middle;
+    /*Code adapted from https://www.w3.org/Style/Examples/007/center.en.html*/
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  header * {
+    vertical-align: middle;
+   
+  }
 
-h1 {
-    margin: 0;
-    display: inline;
+
+nav {
+    background-color: grey;
+    list-style-type: none;
     text-align: center;
+
 }
 
 body {
+    margin: 0;
+    
 
 }
 
-nav {
+main {
+    background-image: url('../../media/cinema-21.jpg');
+    min-height: 100%;
 
 }
+
+
 
 /*Classes*/
 
-.links{
 
+.title {
+    position: relative;
 }
-
-
 
 
 /*IDs*/
 
-#title {
+#links li{
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    vertical-align: middle;
+    position: relative;  
+    padding: 8px;
+    background-color: #dddddd;
+}
 
 }
 
+#logo {
+    vertical-align: middle;
+    width: 200px;
+}
+
+#welcome {
+    margin: 0;
+    font-family: 'Tangerine', serif;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}

@@ -10,26 +10,38 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime('style.css'); ?>">
     <script src='../wireframe.js'></script>
+    <!--Web fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    
   </head>
 
   <body>
 
     <header>
-      <div id="title">
-        <h1>Welcome to Lunardo Cinemas</h1>
-        <!-- Lunardo Logo created using templates and tools at www.FreeLogoDesign.org -->
+      <div class="title">
         <img id='logo' src='../../media/Lunardo_logo.png' alt='Lunardo logo'/>
+        <h1 id="welcome">Lunardo Cinemas</h1>
+        <!-- Lunardo Logo created using templates and tools at www.FreeLogoDesign.org -->
+        
         </div>
     </header>
 
     <nav>
-      <div class="links">Put website navigation links here</div>
+      <ul id="links">
+        <li><a href="">About Us</a></li>
+        <li><a href="">Now Showing</a></li>
+        <li><a href="">Book Now</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
+      <article id='AboutUs'>
+        <p> Hello and welcom to my arse,  eat plenty of dicks please
+
+        </p>
+          
       </article>
     </main>
 
