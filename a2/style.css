@@ -1,4 +1,8 @@
 /* Insert your styles here */
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     /*Code adapted from https://www.w3.org/Style/Examples/007/center.en.html*/
     display: flex;
@@ -6,105 +10,171 @@ header {
     justify-content: center;
     height: 500px;
     position: relative;
-    background-image: url('../../media/film-2.png');
-	height: 200px;
+    background-image: url('../../media/board-cinema-cinematography-clapper-board-274937.jpg');
     background-position: center;
 	background-size: cover;
+    margin: 0;
   }
 
   header * {
     vertical-align: middle;
 
-  }
+
+}
+
+h1 {
+	font-size: 300%;
+	font-weight: bold;
+}
 
 h2 {
+    margin: 0;
+    padding: 0;
     position: relative;
     text-align: center;
-
 
 }
 
 
 nav {
-    background-color: grey;
-    list-style-type: none;
-    text-align: center;
-    position: fixed;
+	width: 125px;
 
 }
 
 body {
     margin: 0;
-    height: 1000px;
-
+	background-color: black;
 
 }
 
 main {
-    background-image: url('../../media/curtain.png');
-    height: 500px;
+    margin: 0;
+  
 }
 
 p {
-    position: relative;
-    left: 100px;
-    width: 80%;
+    
+    
+    width: 100%;
 	font-family: 'Neuton', serif;
 	color: white;
 	font-size: 150%;
-    text-align: center;
+    text-align: left;
+    opacity: 1;
 }
 
 a {
+    outline: none;
     text-decoration: none;
+    
 }
 
+a:link, 
+a:visited {
+    color: white;
+    ;
+}
 
+a:hover {
+    color: #400080;
+}
+
+a:active {
+    background-color: lightgray;
+}
+
+footer {
+    color: white;
+}
 
 /*Classes*/
 
-
 .title {
+	text-align: center;
+}
+
+.title h1{
    /* background-repeat: no-repeat;*/
     /*background-size: cover;*/
-    font-size: 300%;
+    font-size: 500%;
     font-weight: bold;
-    text-align: middle;
-}
-
-
-/*IDs*/
-
-#links li{
-    display: inline-block;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: bold;
-    font-size: 150%;
-    vertical-align: middle;
-    text-decoration: none;
-    position: relative;
-    padding: 8px;
-    background-color: #dddddd;
-}
-
-
-
-#logo {
-    vertical-align: middle;
-    width: 200px;
-}
-
-#welcome {
     margin: 0;
-    font-family: 'Tangerine', serif;
+    font-family: 'Sacramento', cursive;
     display: inline-block;
-    text-align: center;
     position: relative;
     bottom: 20px;
 }
+
+.links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+}
+
+.links li{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 125%;
+    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    background-color: #330000
+}
+
+/*Due to the small size of the logo I am using this container to enable me to resize the image. This code/idea was adapted from
+	a stack overflow post found here https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css*/
+.logocontainer{
+    margin: 0 auto;
+	width: 300px;
+    height: 200px;
+    position: relative;
+    bottom: 100px;
+}
+
+.logocontainer img {
+
+    width: 100%;
+    height auto;
+}
+
+.parallax {
+
+  background-image: url("../../media/cinema_backdrop.jpeg");
+  
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-size: cover;
+  position: relative;
+  /* opacity: 0.45; */
+
+}
+
+.aboutUsContainer {
+    position: relative;
+    display: inline-block;
+    background-color : lightslategrey;
+    width: 60%;
+    left: 20%;
+    top: 250px;
+
+}
+
+/*IDs*/
+
 
 #stormy {
     font-family: 'Bangers', cursive;
     color: white;
     font-size: 200%;
 }
+
+#AboutUs, 
+#NewSeating, 
+#NowShowing,
+#Pricing,
+#BookNow {
+    height: 100vh;
+
+}
+
