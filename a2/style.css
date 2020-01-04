@@ -1,37 +1,62 @@
 /* Insert your styles here */
 header {
-    font-size: 300%;
-    font-weight: bold;
-    text-align: middle;
     /*Code adapted from https://www.w3.org/Style/Examples/007/center.en.html*/
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    height: 500px;
+    position: relative;
+    background-image: url('../../media/film-2.png');
+	height: 200px;
+    background-position: center;
+	background-size: cover;
   }
-  
+
   header * {
     vertical-align: middle;
-   
+
   }
+
+h2 {
+    position: relative;
+    text-align: center;
+
+
+}
 
 
 nav {
     background-color: grey;
     list-style-type: none;
     text-align: center;
+    position: fixed;
 
 }
 
 body {
     margin: 0;
-    
+    height: 1000px;
+
 
 }
 
 main {
-    background-image: url('../../media/cinema-21.jpg');
-    min-height: 100%;
+    background-image: url('../../media/curtain.png');
+    height: 500px;
+}
 
+p {
+    position: relative;
+    left: 100px;
+    width: 80%;
+	font-family: 'Neuton', serif;
+	color: white;
+	font-size: 150%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -40,7 +65,11 @@ main {
 
 
 .title {
-    position: relative;
+   /* background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    font-size: 300%;
+    font-weight: bold;
+    text-align: middle;
 }
 
 
@@ -52,12 +81,13 @@ main {
     font-weight: bold;
     font-size: 150%;
     vertical-align: middle;
-    position: relative;  
+    text-decoration: none;
+    position: relative;
     padding: 8px;
     background-color: #dddddd;
 }
 
-}
+
 
 #logo {
     vertical-align: middle;
@@ -71,4 +101,10 @@ main {
     text-align: center;
     position: relative;
     bottom: 20px;
+}
+
+#stormy {
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 200%;
 }

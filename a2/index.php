@@ -13,7 +13,8 @@
     <!--Web fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&display=swap">
   </head>
 
   <body>
@@ -23,9 +24,9 @@
         <img id='logo' src='../../media/Lunardo_logo.png' alt='Lunardo logo'/>
         <h1 id="welcome">Lunardo Cinemas</h1>
         <!-- Lunardo Logo created using templates and tools at www.FreeLogoDesign.org -->
-        
+
         </div>
-    </header>
+    </header
 
     <nav>
       <ul id="links">
@@ -38,10 +39,15 @@
 
     <main>
       <article id='AboutUs'>
-        <p> Hello and welcom to my arse,  eat plenty of dicks please
-
-        </p>
-          
+        <h2 id='stormy'> IT WAS A DARK AND STORMY NIGHT...</h2>
+        <p> Which makes it the perfect night for a a movie! Hello and welcome to Lunardo Cinemas.
+            We have been here in operation since 1952 and have happily provided this community with the latest in cinema
+            for almost 70 years. We are a family owned business now into its 3rd Generation of owner operators, and with that
+            comes not only in depth industry knowledge but also a strong connection to the community. We currently sponsor both junior
+            cricket and junior rugby in the area.</p>
+            <p>Over the years we have undergone many changes in keeping up with the latest in cinema technology and to ensure that we
+            stay relevant. Our latest change has seen a significant upgrade to our seating and in conjunction with our premier projectors
+            we can provide and absolutely unforgettable cinema experience and we can't wait for you to come and try it out!</p>
       </article>
     </main>
 
