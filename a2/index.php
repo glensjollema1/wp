@@ -223,8 +223,51 @@
           </div>
         </section>
         <article class='mainSection parallax' id='PricingGuide'>
+              <h2>Pricing Guide</h2>
+          <div class='synopsisBox'>
+            <table>
+              <tr>
+                <th>Seat Type</th>
+                <th>Mon-Tue, and 12pm Wed-Fri</th>
+                <th>Sat-Sun and after 12pm Wed-Fri</th>
+              </tr>
+              <tr>
+                <th>Standard Adult</th>
+                <td>15.00</td>
+                <td>20.50</td>
+              </tr>
+              <tr>
+                <th>Standard Concession</th>
+                <td>13.00</td>
+                <td>18.00</td>
+              </tr>
+              <tr>
+                <th>Standard Child</th>
+                <td>11.00</td>
+                <td>15.50</td>
+              </tr>
+              <tr>
+                <th>First Class Adult</th>>
+                <td>25.00</td>
+                <td>30.00</td>
+              </tr>
+              <tr>
+                <th>First Class Concession</th>
+                <td>23.00</td>
+                <td>27.50</td>
+              </tr>
+              <tr>
+                <th>First Class Child</th>
+                <td>21.00</td>
+                <td>25.00</td>
+              </tr>  
+            </table>
+          </div>        
+
+    
         </article>
         <article class='mainSection parallax' id='BookNow'>
+          <img src='../../media/website-under-construction.png' alt="Under Construction">
         </article> 
         
 

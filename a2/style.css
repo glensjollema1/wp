@@ -124,6 +124,25 @@ footer {
 
 }
 
+.synopsisBox table {
+    display: table;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 3%;
+
+}
+
+
+.synopsisBox td, 
+th {
+    text-align: center;;
+    color: #FFA71A;
+    border: 1px solid white;
+   
+    
+}
+
 
 
 /*Classes*/
@@ -321,7 +340,8 @@ footer {
 
 h2#upgradeHeader, 
 #NowShowing h2,
-#Synopsis h2 {
+#Synopsis h2,
+#PricingGuide h2 {
     font-family: 'Sacramento', cursive;
     font-weight: bold;
     font-size: 300%;
