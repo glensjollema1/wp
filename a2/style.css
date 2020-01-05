@@ -53,17 +53,15 @@ main {
 }
 
 p {
-    
-    
+       
     width: 100%;
 	font-family: 'Neuton', serif;
 	color: white;
 	font-size: 150%;
     text-align: left;
-    opacity: 1;
 }
 
-a {
+nav a {
     outline: none;
     text-decoration: none;
     
@@ -72,7 +70,7 @@ a {
 a:link, 
 a:visited {
     color: white;
-    ;
+    
 }
 
 a:hover {
@@ -86,6 +84,8 @@ a:active {
 footer {
     color: white;
 }
+
+
 
 /*Classes*/
 
@@ -139,15 +139,16 @@ footer {
 }
 
 .parallax {
-
+ /* Code adapted from w3schools */
   background-image: url("../../media/cinema_backdrop.jpeg");
   
   background-attachment: fixed;
-  /* background-position: center; */
   background-size: cover;
   position: relative;
-  /* opacity: 0.45; */
+}
 
+.mainSection {
+    height: 100vh;
 }
 
 .aboutUsContainer {
@@ -160,6 +161,22 @@ footer {
 
 }
 
+.seatContainer {
+    position: absolute;
+    display: inline-block;
+    background-color: lightslategrey;
+    width: 30%;
+    
+}
+
+.seatTextContainer {
+    position: absolute;
+    display: inline;
+    background-color: lightslategrey;
+    left: 65%;
+    top: 100px;
+}
+
 /*IDs*/
 
 
@@ -169,12 +186,17 @@ footer {
     font-size: 200%;
 }
 
-#AboutUs, 
-#NewSeating, 
-#NowShowing,
-#Pricing,
-#BookNow {
-    height: 100vh;
-
+#NewSeating {
+    position: relative;
 }
 
+
+.seatContainer#seat1 {
+    left: 20%;
+    top: 100px;
+}
+
+.seatContainer#seat2 {
+    left: 20%;
+    top: 600px;
+}

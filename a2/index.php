@@ -43,7 +43,7 @@
 
     <main>
       
-        <article id='AboutUs'>
+        <article class='mainSection' id='AboutUs'>
           <div class='aboutUsContainer'>
             <h2 id='stormy'> IT WAS A DARK AND STORMY NIGHT...</h2>
             <p> Which makes it the perfect night for a a movie! Hello and welcome to Lunardo Cinemas.
@@ -56,19 +56,25 @@
             we can provide and absolutely unforgettable cinema experience. We can't wait for you to come and try it out!</p>
           </div>
         </article>
-        <article id='NewSeating'>
-          <div class='seatContainer'>
+        <article class='mainSection' id='NewSeating'>
+          <div class='seatContainer' id='seat1'>
             <img class='seat' src='../../media/Profern-Standard-Twin.png'> 
           </div>
-          <div class='SeatTextContainer'>
+          <div class='seatTextContainer' id='seatText1'>
+            <p class='SeatText'>Testing the texticles</p>
+          </div>
+          <div class='seatContainer' id='seat2'>
+            <img class='seat' src='../../media/Profern-Verona-Twin.png'> 
+          </div>
+          <div class='SeatTextContainer' id='seatText2'>
             <p class='SeatText'></p>
           </div>
         </article>
-        <section id='NowShowing'>
+        <section class='mainSection' id='NowShowing'>
         </section>
-        <article id='Pricing'>
+        <article class='mainSection' id='Pricing'>
         </article>
-        <article id='BookNow'>
+        <article class='mainSection' id='BookNow'>
         </article> 
           
 
