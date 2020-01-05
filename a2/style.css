@@ -237,13 +237,11 @@ footer {
 
 .panel img {
     display: inline-block;
+    position: absolute;
     max-width: 75%;
     max-height: 75%;
     padding: 15px;
 }
-
-
-
 
 .seatContainer img {
     /* This ensures that the image size will change with the container size. */
@@ -259,8 +257,40 @@ footer {
 
 }
 
+.synopsisBox {
+    position: absolute;
+    height: 800px;
+    width: 1250px;
+    background-color: black;
+    left: 25%;
+    top: 200px;
+}
 
-    
+.synopsisText {
+    position: absolute;
+    display: inline-block;
+    height: 550px;
+    width: 550px;
+    top: 20px;
+}
+
+.trailer {
+    position: absolute;
+    left: 600px;
+    top: 100px;
+}
+
+.synopsisBox h2 {
+    position: absolute;
+    left: 45%;
+}
+
+.synopsisText h3 {
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 200%;
+    padding: 10px;
+}
 
 /*IDs*/
 
@@ -270,19 +300,21 @@ footer {
     font-size: 200%;
 }
 
-h2#upgradeHeader, #NowShowing h2 {
+h2#upgradeHeader, 
+#NowShowing h2,
+#Synopsis h2 {
     font-family: 'Sacramento', cursive;
     font-weight: bold;
     font-size: 300%;
     color: #FFA71A;
 }
 
-#upgrades {
+#upgrades,
+#NowShowing,
+#Synopsis,
+#PricingGuide,
+#BookNow {
     position: relative;
-}
-
-#NowShowing {
-    position : relative;
 }
 
 .seatContainer#seat1 {
@@ -347,5 +379,9 @@ h2#upgradeHeader, #NowShowing h2 {
 .panel#p4 {
     left: 60%;
     top: 675px;
+}
+
+#titleAndRating {
+    word-spacing: 200px;
 }
 

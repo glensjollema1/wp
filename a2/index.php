@@ -200,7 +200,14 @@
           
         </section>
         <section class='mainSection parallax' id='Synopsis'>
-
+          <div class='synopsisBox'>
+            <h2>Synopsis</h2>
+            <!-- Code copied directly from youtube video embed snippet -->
+            <iframe class='trailer' width="560" height="315" src="https://www.youtube.com/embed/tL4McUzXfFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div class='synopsisText'>
+              <h3> JoJo <span id='titleAndRating'>Rabbit      M</span></h3>
+            </div>
+          </div>
         </section>
         <article class='mainSection parallax' id='PricingGuide'>
         </article>
