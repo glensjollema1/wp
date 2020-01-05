@@ -86,111 +86,111 @@
         <section class='mainSection parallax' id='NowShowing'>
           <h2>Now Showing</h2>
           <div class='panel' id='p1'>
-            <img class='movie' src='../../media/SW_ROTS_poster.jpg' alt="Star Wars The Rise of Skywalker Poster">
+            <img  src='../../media/SW_ROTS_poster.jpg' alt="Star Wars The Rise of Skywalker Poster">
             
-            <h4 class='movTitle'>Star Wars TROS  M</h4>
+            <h4 class='movTitle'>Star Wars TROS           M</span></h4>
             <table>
               <tr>
-                <td>Mon</td><td>0930</td>
+                <td>Mon</td><td>1200</td>
               </tr>
               <tr>
-                <td>Tue</td><td>0930</td>
+                <td>Tue</td><td>1200</td>
               </tr>
               <tr>
-                <td>Wed</td><td>1130</td>
+                <td>Wed</td><td>1800</td>
               </tr>
               <tr>
-                <td>Thu</td><td>1130</td>
+                <td>Thu</td><td>1800</td>
               </tr>
               <tr>
-                <td>Fri</td><td>1500</td>
+                <td>Fri</td><td>1800</td>
               </tr>
               <tr>
-                <td>Sat</td><td>1500</td>
-              </tr>
-              <tr>
-                <td>Sun</td><td>2100</td>
-              </tr>
-            </table>
-          </div>
-          <div class='panel' id='p2'>
-            <img class='movie' src='../../media/Frozen2_poster.jpg' alt="Frozen 2 Poster">
-            
-            <h4 class='movTitle'>Frozen 2  G</h4>
-            <table>
-              <tr>
-                <td>Mon</td><td>0900</td>
-              </tr>
-              <tr>
-                <td>Tue</td><td>0900</td>
-              </tr>
-              <tr>
-                <td>Wed</td><td>1100</td>
-              </tr>
-              <tr>
-                <td>Thu</td><td>1100</td>
-              </tr>
-              <tr>
-                <td>Fri</td><td>1300</td>
-              </tr>
-              <tr>
-                <td>Sat</td><td>1300</td>
+                <td>Sat</td><td>1200</td>
               </tr>
               <tr>
                 <td>Sun</td><td>1200</td>
               </tr>
             </table>
           </div>
-          <div class='panel' id='p3'>
-            <img class='movie' src='../../media/AN_poster.jpg' alt="The Aeronauts Poster">
+          <div class='panel' id='p2'>
+            <img src='../../media/Frozen2_poster.jpg' alt="Frozen 2 Poster">
             
-            <h4 class='movTitle'>The Aeronauts  M</h4>
+            <h4 class='movTitle'>Frozen 2           G</span></h4>
             <table>
               <tr>
-                <td>Mon</td><td>1500</td>
+                <td>Mon</td><td>-</td>
               </tr>
               <tr>
-                <td>Tue</td><td>1500</td>
+                <td>Tue</td><td>-</td>
               </tr>
               <tr>
-                <td>Wed</td><td>1830</td>
+                <td>Wed</td><td>2100</td>
               </tr>
               <tr>
-                <td>Thu</td><td>1830</td>
+                <td>Thu</td><td>2100</td>
               </tr>
               <tr>
                 <td>Fri</td><td>2100</td>
               </tr>
               <tr>
-                <td>Sat</td><td>2100</td>
+                <td>Sat</td><td>1800</td>
               </tr>
               <tr>
-                <td>Sun</td><td>1900</td>
+                <td>Sun</td><td>1800</td>
+              </tr>
+            </table>
+          </div>
+          <div class='panel' id='p3'>
+            <img src='../../media/AN_poster.jpg' alt="The Aeronauts Poster">
+            
+            <h4 class='movTitle'>The Aeronauts            M</span></h4>
+            <table>
+              <tr>
+                <td>Mon</td><td>1800</td>
+              </tr>
+              <tr>
+                <td>Tue</td><td>1800</td>
+              </tr>
+              <tr>
+                <td>Wed</td><td>-</td>
+              </tr>
+              <tr>
+                <td>Thu</td><td>-</td>
+              </tr>
+              <tr>
+                <td>Fri</td><td>-</td>
+              </tr>
+              <tr>
+                <td>Sat</td><td>1500</td>
+              </tr>
+              <tr>
+                <td>Sun</td><td>1500</td>
               </tr>
             </table>
           </div>
           <div class='panel' id='p4'>
-            <img class='movie' src='../../media/JJR_poster.jpg' alt="JoJo Rabbit Poster">
+            <img  src='../../media/JJR_poster.jpg' alt="JoJo Rabbit Poster">
             
-            <h4 class='movTitle'>JoJo Rabbit  M</h4>
+            <h4 class='movTitle'>JoJo Rabbit            M</span></h4>
             <table>
               <tr>
-                <td>Mon</td><td>1600</td>
+                <td>Mon</td><td>-</td>
               </tr>
               <tr>
-                <td>Tue</td><td>1600</td>
+                <td>Tue</td><td>-</td>
               </tr>
               <tr>
-                <td>Wed</td><td>1900</td>
+                <td>Wed</td><td>1200</td>
               </tr>
               <tr>
-                <td>Thu</td><td>1900</td>
+                <td>Thu</td><td>1200</td>
               </tr>
               <tr>
-                <td>Fri</td><td>2000</td>
+                <td>Fri</td><td>1200</td>
               </tr>
               <tr>
-                <td>Sat</td><td>1500</td>
+                <td>Sat</td><td>2100</td>
               </tr>
               <tr>
                 <td>Sun</td><td>2100</td>
@@ -205,7 +205,10 @@
             <!-- Code copied directly from youtube video embed snippet -->
             <iframe class='trailer' width="560" height="315" src="https://www.youtube.com/embed/tL4McUzXfFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
             <div class='synopsisText'>
-              <h3> JoJo <span id='titleAndRating'>Rabbit      M</span></h3>
+              <h3> JoJo Rabbit                    M</h3>
+              <p class='plot'>Jojo is a lonely German boy who discovers that his single mother is hiding a Jewish girl in their 
+                attic. Aided only by his imaginary friend -- Adolf Hitler -- Jojo must confront his blind nationalism 
+                as World War II continues to rage on</p>
             </div>
           </div>
         </section>
