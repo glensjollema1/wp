@@ -206,9 +206,19 @@
             <iframe class='trailer' width="560" height="315" src="https://www.youtube.com/embed/tL4McUzXfFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
             <div class='synopsisText'>
               <h3> JoJo Rabbit                    M</h3>
+              <!-- plot taken from https://www.google.com/search?q=jojo+rabbit+plot&oq=jojo+rabbit+plot&aqs=chrome..69i57j0l7.4953j0j4&sourceid=chrome&ie=UTF-8 -->
               <p class='plot'>Jojo is a lonely German boy who discovers that his single mother is hiding a Jewish girl in their 
                 attic. Aided only by his imaginary friend -- Adolf Hitler -- Jojo must confront his blind nationalism 
                 as World War II continues to rage on</p>
+            </div>
+            <div class='synopsisButtons'>
+              <button>Mon -</button>
+              <button>Tue -</button>
+              <button>Wed 12pm</button>
+              <button>Thu 12pm</button>
+              <button>Fri 12pm</button>
+              <button>Sat 9pm</button>
+              <button>Sun 9pm</button>
             </div>
           </div>
         </section>

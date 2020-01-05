@@ -301,6 +301,15 @@ footer {
     top: 45%;
 }
 
+.synopsisButtons {
+    margin: 0;
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    float: left;
+    cursor: pointer;
+}
+
 
 /*IDs*/
 
