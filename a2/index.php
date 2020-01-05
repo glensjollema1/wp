@@ -11,11 +11,12 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime('style.css'); ?>">
     <script src='../wireframe.js'></script>
     <!--Web fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sacramento&display=swap" >
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela+Round&display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Tangerine">
+	  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bangers&display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Neuton&display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat&display=swap">
   </head>
 
   <body>
@@ -29,21 +30,24 @@
 
         </div>
     </header>
-  <div class='parallax'>
-   	<nav>
-      <ul class="links">
-        <li><a href="#AboutUs">About Us</a></li>
-        <li><a href="#NewSeating">New Seating</a></li>
-        <li><a href="#NowShowing">Now Showing</a></li>
-        <li><a href="#PricingGuide">Pricing Guide</a></li>
-        <li><a href="#BookNow">Book Now</a></li>
-        <li><a href="#bottom">Contact</a></li>
-      </ul>
+    <nav>
+        <ul class="links">
+          <li><a href="#AboutUs">About Us</a></li>
+          <li><a href="#upgrades">Upgrades</a></li>
+          <li><a href="#NowShowing">Now Showing</a></li>
+          <li><a href="#Synopsis">Synopsis</a></li>
+          <li><a href="#PricingGuide">Pricing Guide</a></li>
+          <li><a href="#BookNow">Book Now</a></li>
+          <li><a href="#bottom">Contact</a></li>
+        </ul>
     </nav>
+    
 
-    <main>
+    <div class='parallax'>
+   
+      <main>
       
-        <article class='mainSection' id='AboutUs'>
+        <article class='mainSection parallax' id='AboutUs'>
           <div class='aboutUsContainer'>
             <h2 id='stormy'> IT WAS A DARK AND STORMY NIGHT...</h2>
             <p> Which makes it the perfect night for a a movie! Hello and welcome to Lunardo Cinemas.
@@ -56,27 +60,153 @@
             we can provide and absolutely unforgettable cinema experience. We can't wait for you to come and try it out!</p>
           </div>
         </article>
-        <article class='mainSection' id='NewSeating'>
+        <article class='mainSection parallax' id='upgrades'>
+          <h2 id='upgradeHeader'>Cinema Upgrades</h2>
           <div class='seatContainer' id='seat1'>
             <img class='seat' src='../../media/Profern-Standard-Twin.png'> 
           </div>
           <div class='seatTextContainer' id='seatText1'>
-            <p class='SeatText'>Testing the texticles</p>
+            <h3>Standard Seating Upgrade</h3>
+            <p class='SeatText'>Say hello to one of our newest additions, consider this gold class at a standard price. 
+              These seats come with a fully padded headrest and cupholders. With exceptional lumbar support and buttox 
+              grooving, watching a film from this chair is pure joy.
+            </p>
           </div>
           <div class='seatContainer' id='seat2'>
             <img class='seat' src='../../media/Profern-Verona-Twin.png'> 
           </div>
-          <div class='SeatTextContainer' id='seatText2'>
-            <p class='SeatText'></p>
+          <div class='seatTextContainer' id='seatText2'>
+            <h3>First Class Seating Upgrade</h3>
+            <p class='SeatText'> Our new first class seats are here to provide you with the ultimate cinema experience. These chairs fully recline,
+              have their own tray tables, and inbuilt lights. With these chairs also comes the opportunity to order food and drink and have it 
+              brought to your seat at a pre-defined time during the movie. This is the ultimate in luxury.              
+            </p>
           </div>
         </article>
-        <section class='mainSection' id='NowShowing'>
-        </section>
-        <article class='mainSection' id='Pricing'>
-        </article>
-        <article class='mainSection' id='BookNow'>
-        </article> 
+        <section class='mainSection parallax' id='NowShowing'>
+          <h2>Now Showing</h2>
+          <div class='panel' id='p1'>
+            <img class='movie' src='../../media/SW_ROTS_poster.jpg' alt="Star Wars The Rise of Skywalker Poster">
+            
+            <h4 class='movTitle'>Star Wars TROS  M</h4>
+            <table>
+              <tr>
+                <td>Mon</td><td>0930</td>
+              </tr>
+              <tr>
+                <td>Tue</td><td>0930</td>
+              </tr>
+              <tr>
+                <td>Wed</td><td>1130</td>
+              </tr>
+              <tr>
+                <td>Thu</td><td>1130</td>
+              </tr>
+              <tr>
+                <td>Fri</td><td>1500</td>
+              </tr>
+              <tr>
+                <td>Sat</td><td>1500</td>
+              </tr>
+              <tr>
+                <td>Sun</td><td>2100</td>
+              </tr>
+            </table>
+          </div>
+          <div class='panel' id='p2'>
+            <img class='movie' src='../../media/Frozen2_poster.jpg' alt="Frozen 2 Poster">
+            
+            <h4 class='movTitle'>Frozen 2  G</h4>
+            <table>
+              <tr>
+                <td>Mon</td><td>0900</td>
+              </tr>
+              <tr>
+                <td>Tue</td><td>0900</td>
+              </tr>
+              <tr>
+                <td>Wed</td><td>1100</td>
+              </tr>
+              <tr>
+                <td>Thu</td><td>1100</td>
+              </tr>
+              <tr>
+                <td>Fri</td><td>1300</td>
+              </tr>
+              <tr>
+                <td>Sat</td><td>1300</td>
+              </tr>
+              <tr>
+                <td>Sun</td><td>1200</td>
+              </tr>
+            </table>
+          </div>
+          <div class='panel' id='p3'>
+            <img class='movie' src='../../media/AN_poster.jpg' alt="The Aeronauts Poster">
+            
+            <h4 class='movTitle'>The Aeronauts  M</h4>
+            <table>
+              <tr>
+                <td>Mon</td><td>1500</td>
+              </tr>
+              <tr>
+                <td>Tue</td><td>1500</td>
+              </tr>
+              <tr>
+                <td>Wed</td><td>1830</td>
+              </tr>
+              <tr>
+                <td>Thu</td><td>1830</td>
+              </tr>
+              <tr>
+                <td>Fri</td><td>2100</td>
+              </tr>
+              <tr>
+                <td>Sat</td><td>2100</td>
+              </tr>
+              <tr>
+                <td>Sun</td><td>1900</td>
+              </tr>
+            </table>
+          </div>
+          <div class='panel' id='p4'>
+            <img class='movie' src='../../media/JJR_poster.jpg' alt="JoJo Rabbit Poster">
+            
+            <h4 class='movTitle'>JoJo Rabbit  M</h4>
+            <table>
+              <tr>
+                <td>Mon</td><td>1600</td>
+              </tr>
+              <tr>
+                <td>Tue</td><td>1600</td>
+              </tr>
+              <tr>
+                <td>Wed</td><td>1900</td>
+              </tr>
+              <tr>
+                <td>Thu</td><td>1900</td>
+              </tr>
+              <tr>
+                <td>Fri</td><td>2000</td>
+              </tr>
+              <tr>
+                <td>Sat</td><td>1500</td>
+              </tr>
+              <tr>
+                <td>Sun</td><td>2100</td>
+              </tr>
+            </table>
+          </div>
           
+        </section>
+        <section class='mainSection parallax' id='Synopsis'>
+
+        </section>
+        <article class='mainSection parallax' id='PricingGuide'>
+        </article>
+        <article class='mainSection parallax' id='BookNow'>
+        </article> 
+        
 
     </main>
   </div>
