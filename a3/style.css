@@ -1,0 +1,424 @@
+/* Insert your styles here */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    /*Code adapted from https://www.w3.org/Style/Examples/007/center.en.html*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    position: relative;
+    background-image: url('../../media/board-cinema-cinematography-clapper-board-274937.jpg');
+    background-position: center;
+	background-size: cover;
+    margin: 0;
+}
+
+header * {
+    vertical-align: middle;
+
+
+}
+
+h1 {
+	font-size: 300%;
+	font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    font-size: 200%;
+    color: white;
+}
+
+
+nav {
+    /* z-index alters the display level and ensures that the nav stays ontop of the parallax images */
+    z-index: 10000;
+    width: 125px;
+
+
+}
+
+body {
+    margin: 0;
+	background-color: black;
+
+}
+
+main {
+    margin: 0;
+    position: relative;
+  
+}
+
+p {
+    /* display: flex;    */
+    /* width: 100%; */
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+    text-align: left;
+    padding: 5%; 
+
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    
+}
+
+a:link, 
+a:visited {
+    color: white;
+    
+}
+
+.links li a:hover {
+    color: #400080;
+}
+
+a:active {
+    background-color: lightgray;
+}
+
+footer {
+    color: white;
+}
+
+.panel table {
+    position: absolute;
+    display:inline-block;
+    left: 60%;
+    top: 20%;
+    
+}
+
+.panel tr {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 125%;
+    color: #FFA71A; 
+}
+.panel h4 {
+    position: absolute;
+    font-size: 120%;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    bottom: 80%;
+    white-space: pre;
+
+}
+
+.synopsisBox table {
+    display: table;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 3%;
+
+}
+
+
+.synopsisBox td, 
+th {
+    text-align: center;;
+    color: #FFA71A;
+    border: 1px solid white;
+   
+    
+}
+
+
+
+/*Classes*/
+
+.title {
+	text-align: center;
+}
+
+.title h1{
+   /* background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    font-size: 500%;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+}
+
+.links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+}
+
+.links li{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 125%;
+    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    background-color: #330000
+}
+
+/*Due to the small size of the logo I am using this container to enable me to resize the image. This code/idea was adapted from
+	a stack overflow post found here https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css*/
+.logocontainer{
+    margin: 0 auto;
+	width: 300px;
+    height: 200px;
+    position: relative;
+    bottom: 100px;
+}
+
+.logocontainer img {
+
+    width: 100%;
+    height: auto;
+}
+
+.parallax {
+ /* Code adapted from w3schools */ 
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.mainSection {
+    
+    height: 100vh;
+    position: relative;
+}
+
+.aboutUsContainer {
+    position: relative;
+    display: inline-block;
+    background-color : lightslategrey;
+    width: 65%;
+    left: 20%;
+    top: 15%;
+     /* This will stop text from out of the bounds of its container by placing an ellipsis however if there
+        is not enough room the ellipsis will be clipped */
+    text-overflow: ellipsis;
+
+}
+
+.seatContainer {
+    position: absolute;
+    display: inline-block;
+    background-color: lightslategrey;
+    width: 30%;
+    height: 40%;
+    
+}
+
+.seatTextContainer {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    background-color: lightslategrey;
+    width: 40%;
+    height: 40%;
+    text-overflow: ellipsis;
+}
+
+.panel {
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    height: 40%; 
+    width: 40%;
+}
+
+@media only screen and (min-width: 700px) {
+    .panel { display: block }
+  }
+
+.panel img {
+    display: inline-block;
+    position: absolute;
+    max-width: 75%;
+    max-height: 75%;
+    padding: 10%x;
+    left: 5%;
+    top: 10%;
+}
+
+.seatContainer img {
+    /* This ensures that the image size will change with the container size. */
+    max-width:100%;
+    max-height:100%;
+}
+
+
+
+.movTitle {
+    /* padding: 10px; */
+    color: #FFA71A;
+
+}
+
+.synopsisBox {
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    background-color: black;
+    left: 15%;
+    top: 15%;
+}
+
+.synopsisText {
+    position: absolute;
+    display: inline-block;
+    height: 550px;
+    width: 550px;
+    top: 20px;
+}
+
+.trailer {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+
+.synopsisBox h2 {
+    position: absolute;
+    left: 45%;
+}
+
+.synopsisText h3 {
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 200%;
+    padding: 10%;
+    white-space: pre;
+}
+
+.synopsisText p {
+    position: absolute;
+    left : 10%;
+    top: 45%;
+}
+
+.synopsisButtons {
+    margin: 0;
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    float: left;
+    cursor: pointer;
+}
+
+
+/*IDs*/
+
+#stormy {
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 200%;
+}
+
+h2#upgradeHeader, 
+#NowShowing h2,
+#Synopsis h2,
+#PricingGuide h2 {
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    font-size: 300%;
+    color: #FFA71A;
+}
+
+#upgrades,
+#NowShowing,
+#Synopsis,
+#PricingGuide,
+#BookNow {
+    position: relative;
+}
+
+.seatContainer#seat1 {
+    left: 15%;
+    top: 10%;
+}
+
+.seatContainer#seat2 {
+    left: 15%;
+    top: 55%;
+}
+
+.seatTextContainer#seatText1 {
+    left: 50%;
+    top: 10%;
+}
+
+.seatTextContainer#seatText2 {
+    left: 50%;
+    top: 55%;
+}
+
+.parallax#AboutUs {
+    background-image: url('../../media/cinema_backdrop.jpeg');
+}
+
+.parallax#upgrades {
+    background-image: url('../../media/board-cinema-cinematography-clapper-board-274937.jpg');
+}
+
+.parallax#NowShowing {
+    background-image: url('../../media/cinema_backdrop.jpeg');
+}
+
+.parallax#Synopsis {
+    background-image: url('../../media/board-cinema-cinematography-clapper-board-274937.jpg');
+}
+
+.parallax#PricingGuide {
+    background-image: url('../../media/cinema_backdrop.jpeg');
+}
+
+.parallax#BookNow {
+    background-image: url('../../media/board-cinema-cinematography-clapper-board-274937.jpg');
+}
+
+.panel#p1 {
+    left: 10%;
+    top: 10%;
+}
+
+.panel#p2 {
+    left: 55%;
+    top: 10%;
+}
+
+.panel#p3 {
+    left: 10%;
+    top: 55%;
+}
+
+.panel#p4 {
+    left: 55%;
+    top: 55%;
+}
+
+
+
