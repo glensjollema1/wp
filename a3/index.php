@@ -10,6 +10,7 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime('style.css'); ?>">
     <script src='../wireframe.js'></script>
+    <script src='script.js'></script>
     <!--Web fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sacramento&display=swap" >
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela+Round&display=swap">
@@ -32,13 +33,13 @@
     </header>
     <nav>
         <ul class="links">
-          <li><a href="#AboutUs">About Us</a></li>
-          <li><a href="#upgrades">Upgrades</a></li>
-          <li><a href="#NowShowing">Now Showing</a></li>
-          <li><a href="#Synopsis">Synopsis</a></li>
-          <li><a href="#PricingGuide">Pricing Guide</a></li>
-          <li><a href="#BookNow">Book Now</a></li>
-          <li><a href="#bottom">Contact</a></li>
+          <li id="aboutLink" onclick='navClicked();'><a href="#AboutUs">About Us</a></li>
+          <li id='upgradeLink' onclick='navClicked();'><a href="#upgrades">Upgrades</a></li>
+          <li id='nowShowingLink' onclick='navClicked();'><a href="#NowShowing">Now Showing</a></li>
+          <li id='synopsisLink' onclick='navClicked();'><a href="#Synopsis">Synopsis</a></li>
+          <li id='pricingLink' onclick='navClicked();'><a href="#PricingGuide">Pricing Guide</a></li>
+          <li id='bookNowLink' onclick='navClicked();'><a href="#BookNow">Book Now</a></li>
+          <li id='contactLink' onclick='navClicked();'><a href="#bottom">Contact</a></li>
         </ul>
     </nav>
     
