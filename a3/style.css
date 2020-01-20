@@ -170,7 +170,7 @@ th {
 	position: fixed;
 }
 
-.links li{
+li {
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
     font-size: 125%;
@@ -178,6 +178,10 @@ th {
     border-style: solid;
     border-color: black;
     background-color: #330000
+}
+
+.currentLink{
+    color:red;
 }
 
 /*Due to the small size of the logo I am using this container to enable me to resize the image. This code/idea was adapted from

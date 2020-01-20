@@ -3,7 +3,7 @@
 function navClicked(){
     /*get the id of the event element*/ 
     let currentId = event.currentTarget.id
-    
+    /*Debugging TODO remove before submission */
     console.log(currentId+" was clicked");
    
 
@@ -15,12 +15,14 @@ function navClicked(){
         let navLinkClickTest = element.id;
         if(navLinkClickTest === currentId)
         {
-             document.getElementById(navLinkClickTest).style.color = 'red';
+             document.getElementById(navLinkClickTest).classList.add("currentLink");
             
         } 
         else 
-        {
-            document.getElementById(navLinkClickTest).style.color = 'white';
+        {   
+            /*TODO figure this out shouldnt be a continue, needs to test if the element has 
+            the currentLink class and if so remove it*/
+            continue;
         }
         
     }
