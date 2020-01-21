@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+header{
     /*Code adapted from https://www.w3.org/Style/Examples/007/center.en.html*/
     display: flex;
     align-items: center;
@@ -21,6 +21,8 @@ header * {
 
 
 }
+
+
 
 h1 {
 	font-size: 300%;
@@ -49,7 +51,9 @@ h3 {
 nav {
     /* z-index alters the display level and ensures that the nav stays ontop of the parallax images */
     z-index: 10000;
-    width: 125px;
+    width: 12%;
+    position: sticky;
+    top: 0px;
 
 
 }
@@ -82,22 +86,18 @@ a {
     
 }
 
-a:link, 
-a:visited {
+a:link, a:visited
+{
     color: white;
-    
 }
 
-.links li a:hover {
-    color: #400080;
-}
-
-a:active {
-    background-color: lightgray;
+li a:hover {
+    background-color: #400080;
 }
 
 footer {
     color: white;
+    min-height: 300px;
 }
 
 .panel table {
@@ -167,21 +167,29 @@ th {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	position: fixed;
+    
 }
 
-li {
+nav li {
+   
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
     font-size: 125%;
     text-decoration: none;
     border-style: solid;
     border-color: black;
-    background-color: #330000
+    background-color: #330000;
+    
 }
 
-.currentLink{
+nav li a {
+    color: white;
+}
+
+nav li a.currentLink{
     color:red;
+    background-color: #400080;
+    transition: 0.3s;
 }
 
 /*Due to the small size of the logo I am using this container to enable me to resize the image. This code/idea was adapted from
@@ -282,13 +290,19 @@ li {
 
 }
 
-.synopsisBox {
+.synopsisBox, 
+.bookingBox {
     position: absolute;
     height: 75%;
     width: 75%;
     background-color: black;
     left: 15%;
     top: 15%;
+}
+
+.bookingBox {
+    columns: 15% 2;
+    column-gap: 5%;
 }
 
 .synopsisText {
@@ -404,7 +418,8 @@ h2#upgradeHeader,
     background-image: url('../../media/board-cinema-cinematography-clapper-board-274937.jpg');
 }
 
-.panel#p1 {
+.panel#p1,
+.panel#standardBooking {
     left: 10%;
     top: 10%;
 }
@@ -414,7 +429,8 @@ h2#upgradeHeader,
     top: 10%;
 }
 
-.panel#p3 {
+.panel#p3,
+.panel#firstClass {
     left: 10%;
     top: 55%;
 }

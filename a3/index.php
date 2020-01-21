@@ -31,15 +31,16 @@
 
         </div>
     </header>
-    <nav>
+    <!-- class title means the background image should sretch to cover nav region-->
+    <nav class="title">
         <ul class="links">
-          <li id="aboutLink" onclick='navClicked();'><a href="#AboutUs">About Us</a></li>
-          <li id='upgradeLink' onclick='navClicked();'><a href="#upgrades">Upgrades</a></li>
-          <li id='nowShowingLink' onclick='navClicked();'><a href="#NowShowing">Now Showing</a></li>
-          <li id='synopsisLink' onclick='navClicked();'><a href="#Synopsis">Synopsis</a></li>
-          <li id='pricingLink' onclick='navClicked();'><a href="#PricingGuide">Pricing Guide</a></li>
-          <li id='bookNowLink' onclick='navClicked();'><a href="#BookNow">Book Now</a></li>
-          <li id='contactLink' onclick='navClicked();'><a href="#bottom">Contact</a></li>
+          <li id="aboutLink" ><a href="#AboutUs">About Us</a></li>
+          <li id='upgradeLink'><a href="#upgrades">Upgrades</a></li>
+          <li id='nowShowingLink'><a href="#NowShowing">Now Showing</a></li>
+          <li id='synopsisLink'><a href="#Synopsis">Synopsis</a></li>
+          <li id='pricingLink'><a href="#PricingGuide">Pricing Guide</a></li>
+          <li id='bookNowLink'><a href="#BookNow">Book Now</a></li>
+          <li id='contactLink'><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     
@@ -84,7 +85,7 @@
             </p>
           </div>
         </article>
-        <section class='mainSection parallax' id='NowShowing'>
+        <article class='mainSection parallax' id='NowShowing'>
           <h2>Now Showing</h2>
           <div class='panel' id='p1'>
             <img  src='../../media/SW_ROTS_poster.jpg' alt="Star Wars The Rise of Skywalker Poster">
@@ -199,8 +200,8 @@
             </table>
           </div>
           
-        </section>
-        <section class='mainSection parallax' id='Synopsis'>
+        </article>
+        <article class='mainSection parallax' id='Synopsis'>
           <div class='synopsisBox'>
             <h2>Synopsis</h2>
             <!-- Code copied directly from youtube video embed snippet -->
@@ -222,7 +223,7 @@
               <button>Sun 9pm</button>
             </div>
           </div>
-        </section>
+        </article>
         <article class='mainSection parallax' id='PricingGuide'>
               <h2>Pricing Guide</h2>
           <div class='synopsisBox'>
@@ -268,13 +269,60 @@
     
         </article>
         <article class='mainSection parallax' id='BookNow'>
-          <img src='../../media/website-under-construction.png' alt="Under Construction">
+          <div class='bookingBox'>
+            <form>
+              <div class='panel' id='standardBooking'> 
+                <h3>Standard Seating</h3>
+                <div class='bookingCombo'>
+                  <select name='Adults'>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                  </select>
+                  <select name='Concession'>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                  </select>
+                  <select name='Children'>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                  </select>
+
+                </div>
+                
+
+              </div>    
+            </form>
+          </div>
         </article> 
         
 
     </main>
   </div>
-    <footer>
+    <footer id='contact'>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
       </script> admin@lunardo.com.au PH: +61188448844 Glen Sjollema S3353578. <a href="https://github.com/glensjollema1/wp.git">Visit the project on GitHub</a>

@@ -1,30 +1,35 @@
 /* Insert your javascript here */
 
-function navClicked(){
-    /*get the id of the event element*/ 
-    let currentId = event.currentTarget.id
-    /*Debugging TODO remove before submission */
-    console.log(currentId+" was clicked");
-   
 
-    let elementsArray = document.getElementsByTagName('li');
+/**This function controls the behaviour of the nav links when scrolling or when
+ * clicked on
+ */
 
-    for(let element of elementsArray)
-    {
-        console.log(element);
-        let navLinkClickTest = element.id;
-        if(navLinkClickTest === currentId)
+window.onscroll = function() {
+    //console.clear();
+    //get everything within the nav section that is an anchor and place into an array
+    var navLinkElements = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
+    //retrieve all the elements that are articles 
+    var articles = document.getElementsByTagName('main')[0].getElementsByTagName('article');
+    //console.log(articles);
+    
+    for (var i = 0; i < articles.length; i++)
+    {   
+        //get y postion of the top of the article and the total height of the article
+        //adding these together will produce the Y value of where the section ends.
+        var topBounds = articles[i].offsetTop;
+        var bottomBounds = topBounds + articles[i].offsetHeight;
+
+        if (window.scrollY >= topBounds && window.scrollY < bottomBounds)
         {
-             document.getElementById(navLinkClickTest).classList.add("currentLink");
-            
-        } 
-        else 
-        {   
-            /*TODO figure this out shouldnt be a continue, needs to test if the element has 
-            the currentLink class and if so remove it*/
-            continue;
+            //if we are within the bounds of this article add the currentLink css class
+            navLinkElements[i].classList.add('currentLink');
         }
-        
+        else
+        {
+            //if not, remove the currentLink class
+            navLinkElements[i].classList.remove('currentLink');
+        }
     }
-       
+
 }
