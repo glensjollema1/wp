@@ -47,6 +47,9 @@ h3 {
     color: white;
 }
 
+#standardBooking h3 {
+    text-align: center;
+}
 
 nav {
     /* z-index alters the display level and ensures that the nav stays ontop of the parallax images */
@@ -60,6 +63,7 @@ nav {
 
 body {
     margin: 0;
+    z-index: -1;
 	background-color: black;
 
 }
@@ -98,6 +102,12 @@ li a:hover {
 footer {
     color: white;
     min-height: 300px;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
 }
 
 .panel table {
@@ -213,7 +223,7 @@ nav li a.currentLink{
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  z-index: -1;
+  z-index: 5;
 }
 
 .mainSection {
@@ -271,7 +281,7 @@ nav li a.currentLink{
     position: absolute;
     max-width: 75%;
     max-height: 75%;
-    padding: 10%x;
+    padding: 10%;
     left: 5%;
     top: 10%;
 }
@@ -301,8 +311,7 @@ nav li a.currentLink{
 }
 
 .bookingBox {
-    columns: 15% 2;
-    column-gap: 5%;
+    z-index: 2;
 }
 
 .synopsisText {
@@ -345,6 +354,28 @@ nav li a.currentLink{
     top: 80%;
     float: left;
     cursor: pointer;
+}
+
+.bookingCombo {
+    min-height: 30%;
+    border : 1px;
+    border-color: white;
+}
+
+
+
+.bookingCombo select {
+    display: block;
+    
+   
+   
+}
+
+select {
+    visibility: visible;
+    z-index: 11000;
+    background-color: white;
+
 }
 
 
@@ -418,10 +449,10 @@ h2#upgradeHeader,
     background-image: url('../../media/board-cinema-cinematography-clapper-board-274937.jpg');
 }
 
-.panel#p1,
-.panel#standardBooking {
+.panel#p1 {
     left: 10%;
     top: 10%;
+    
 }
 
 .panel#p2 {
@@ -439,6 +470,40 @@ h2#upgradeHeader,
     left: 55%;
     top: 55%;
 }
+
+.bookingCombo select{
+    min-height: 20%;
+    overflow: visible;
+    display:inline-block;
+    float: right;
+}
+
+.bookingCombo label {
+   display: inline-block;
+   float: right;
+   padding-right: 1.5%; 
+   
+
+}
+
+.panel#standardBooking {
+    left: 5%;
+    top: 10%;
+    border: solid;
+    border-width: 1 1px;
+    border-color: #FFA71A;
+    max-height: 30%;
+   
+    
+}
+
+.bookingCombo > p {
+    padding: 2%;
+}
+
+
+
+
 
 
 

@@ -90,7 +90,7 @@
           <div class='panel' id='p1'>
             <img  src='../../media/SW_ROTS_poster.jpg' alt="Star Wars The Rise of Skywalker Poster">
             
-            <h4 class='movTitle'>Star Wars TROS           M</span></h4>
+            <h4 class='movTitle'>Star Wars TROS           M</h4>
             <table>
               <tr>
                 <td>Mon</td><td>1200</td>
@@ -118,7 +118,7 @@
           <div class='panel' id='p2'>
             <img src='../../media/Frozen2_poster.jpg' alt="Frozen 2 Poster">
             
-            <h4 class='movTitle'>Frozen 2           G</span></h4>
+            <h4 class='movTitle'>Frozen 2           G</h4>
             <table>
               <tr>
                 <td>Mon</td><td>-</td>
@@ -146,7 +146,7 @@
           <div class='panel' id='p3'>
             <img src='../../media/AN_poster.jpg' alt="The Aeronauts Poster">
             
-            <h4 class='movTitle'>The Aeronauts            M</span></h4>
+            <h4 class='movTitle'>The Aeronauts            M</h4>
             <table>
               <tr>
                 <td>Mon</td><td>1800</td>
@@ -174,7 +174,7 @@
           <div class='panel' id='p4'>
             <img  src='../../media/JJR_poster.jpg' alt="JoJo Rabbit Poster">
             
-            <h4 class='movTitle'>JoJo Rabbit            M</span></h4>
+            <h4 class='movTitle'>JoJo Rabbit            M</h4>
             <table>
               <tr>
                 <td>Mon</td><td>-</td>
@@ -249,7 +249,7 @@
                 <td>15.50</td>
               </tr>
               <tr>
-                <th>First Class Adult</th>>
+                <th>First Class Adult</th>
                 <td>25.00</td>
                 <td>30.00</td>
               </tr>
@@ -270,11 +270,32 @@
         </article>
         <article class='mainSection parallax' id='BookNow'>
           <div class='bookingBox'>
-            <form>
+            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" onsubmit="return checkForm()">
               <div class='panel' id='standardBooking'> 
                 <h3>Standard Seating</h3>
-                <div class='bookingCombo'>
-                  <select name='Adults'>
+                <div class='bookingCombo' id='standard'>
+                  <p class='AdultsAlign'>
+                   
+                  <select id='Adults' name='AdultStandard'>
+                    
+                      <option value='0' selected>0</option>
+                      <option value='1'>1</option>
+                      <option value='2'>2</option>
+                      <option value='3'>3</option>
+                      <option value='4'>4</option>
+                      <option value='5'>5</option>
+                      <option value='6'>6</option>
+                      <option value='7'>7</option>
+                      <option value='8'>8</option>
+                      <option value='9'>9</option>
+                      <option value='10'>10</option>
+                    </select>
+                    <label for='Adults'>Adults</label>
+                  </p>
+                  <p class='ConcessionAlign'>  
+                  
+                  <select id='ConcessionStandard' name='ConcessionStandard'>
+                    <option value='0' selected>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -286,7 +307,12 @@
                     <option value='9'>9</option>
                     <option value='10'>10</option>
                   </select>
-                  <select name='Concession'>
+                  <label for='ConcessionStandard'>Concession</label>
+                  </p>
+                  <p class='ChildrenAlign'>
+                  
+                  <select id='ChildrenStandard' name='ChildrenStandard'>
+                    <option value='0' selected>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -298,18 +324,8 @@
                     <option value='9'>9</option>
                     <option value='10'>10</option>
                   </select>
-                  <select name='Children'>
-                    <option value='1'>1</option>
-                    <option value='2'>2</option>
-                    <option value='3'>3</option>
-                    <option value='4'>4</option>
-                    <option value='5'>5</option>
-                    <option value='6'>6</option>
-                    <option value='7'>7</option>
-                    <option value='8'>8</option>
-                    <option value='9'>9</option>
-                    <option value='10'>10</option>
-                  </select>
+                  <label for='ChildrenStandard'>Children</label>
+                  </p>
 
                 </div>
                 
