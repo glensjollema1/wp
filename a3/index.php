@@ -418,13 +418,17 @@
                 </p>
                 <p>
                 <label for='ccExpiry'>Expiry:</label>
-                <input type='text' name='ccExpiry' placeholder='MM/YY'/>
+                <input type='month' name='ccExpiry' placeholder='YYYY/MM'/>
                 
                 </p>
 
               </div>
               <p id='customerFormSubmit' >
-                <input type='submit' value='submit'>
+                <input type='submit' value='Order'>
+              </p>
+              <p id='totalOrderAmount'>
+                <label for='moneyField'>Total $</label>
+                <input type='number' id='moneyField' name='moneyField'>
               </p>
             </form>
           </div>

@@ -1,9 +1,14 @@
 /* Insert your javascript here */
 
+//Variables to store total number of seats being purchased
+var childStandardSeats      = 0;
+var adultStandardSeats      = 0;
+var concessionStandardSeats = 0;
+var childFCSeats            = 0;
+var adultFCSeats            = 0;
+var concessionFCSeats       = 0;
 
-/**This function controls the behaviour of the nav links when scrolling or when
- * clicked on
- */
+ var priceArray = {             }
 
 window.onscroll = function() {
     //console.clear();
@@ -32,4 +37,10 @@ window.onscroll = function() {
         }
     }
 
+}
+
+
+function orderTotalField() 
+{   
+    let field = document.
 }

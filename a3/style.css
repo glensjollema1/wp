@@ -537,8 +537,13 @@ h2#upgradeHeader,
 }
 
 
-p#customerFormSubmit {
+#customerFormSubmit {
     
+    padding-top: 60%;
+    padding-left: 70%;
+}
+
+#totalOrderAmount {
     padding-top: 60%;
     padding-left: 40%;
 }
