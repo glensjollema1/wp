@@ -330,7 +330,102 @@
                 </div>
                 
 
-              </div>    
+              </div>
+              
+              <div class='panel' id='FClassBooking'> 
+                <h3>First Class Seating</h3>
+              
+                <div class='bookingCombo' id='FClass'>
+                  <p class='AdultsAlign'>
+                   
+                  <select id='AdultFClass' name='AdultFclass'>
+                    
+                      <option value='0' selected>0</option>
+                      <option value='1'>1</option>
+                      <option value='2'>2</option>
+                      <option value='3'>3</option>
+                      <option value='4'>4</option>
+                      <option value='5'>5</option>
+                      <option value='6'>6</option>
+                      <option value='7'>7</option>
+                      <option value='8'>8</option>
+                      <option value='9'>9</option>
+                      <option value='10'>10</option>
+                    </select>
+                    <label for='AdultFClass'>Adults</label>
+                  </p>
+                  <p class='ConcessionAlign'>  
+                  
+                  <select id='ConcessionFClass' name='ConcessionFClass'>
+                    <option value='0' selected>0</option>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                  </select>
+                  <label for='ConcessionFClass'>Concession</label>
+                  </p>
+                  <p class='ChildrenAlign'>
+                  
+                  <select id='ChildrenStandard' name='ChildrenStandard'>
+                    <option value='0' selected>0</option>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                  </select>
+                  <label for='ChildrenFClass'>Children</label>
+                  </p>
+
+                </div>
+                
+
+            </div>
+
+              <div class='panel' id='CustomerInfo'>
+                <h3>Customer Info</h3>
+                <p>
+                <label for='customerName'>Name: </label>
+                <input type='text' name='customerName' placeholder='eg. John Smith'/>
+                
+                </p>
+                <p>
+                <label for='customerEmail'>Email: </label>
+                <input type='email' name='customerEmail' placeholder='eg. bat@man.com'/>
+               
+                </p>
+                <p>
+                <label for='customerPhone'>Mobile: </label>
+                <input type='number' name='customerPhone' placeholder='eg. 0412345678 (no spaces)'/>
+                
+                </p>
+                <p>
+                <label for='customerCC'>Credit Card: </label>
+                <input type='number' name='customerCC' placeholder='1234567890123456 (no spaces)'/>
+               
+                </p>
+                <p>
+                <label for='ccExpiry'>Expiry:</label>
+                <input type='text' name='ccExpiry' placeholder='MM/YY'/>
+                
+                </p>
+
+              </div>
+              <p id='customerFormSubmit' >
+                <input type='submit' value='submit'>
+              </p>
             </form>
           </div>
         </article> 

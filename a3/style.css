@@ -47,7 +47,7 @@ h3 {
     color: white;
 }
 
-#standardBooking h3 {
+#BookNow h3 {
     text-align: center;
 }
 
@@ -200,6 +200,13 @@ nav li a.currentLink{
     color:red;
     background-color: #400080;
     transition: 0.3s;
+}
+
+input {
+    display: inline-block;
+    float: ;
+    
+
 }
 
 /*Due to the small size of the logo I am using this container to enable me to resize the image. This code/idea was adapted from
@@ -471,7 +478,7 @@ h2#upgradeHeader,
     top: 55%;
 }
 
-.bookingCombo select{
+.bookingCombo select {
     min-height: 20%;
     overflow: visible;
     display:inline-block;
@@ -488,7 +495,7 @@ h2#upgradeHeader,
 
 .panel#standardBooking {
     left: 5%;
-    top: 10%;
+    top: 15%;
     border: solid;
     border-width: 1 1px;
     border-color: #FFA71A;
@@ -501,8 +508,40 @@ h2#upgradeHeader,
     padding: 2%;
 }
 
+.panel#FClassBooking {
+    left: 5%;
+    top: 55%;
+    border: solid;
+    border-width: 1 1px;
+    border-color: #FFA71A;
+    max-height: 30%;
+    
+}
+
+.panel#CustomerInfo {
+    left: 48%;
+    top: 15%;
+    border: solid;
+    border-color: #FFA71A;
+    height: 60%;
+    width: 50%;
+    
+}
 
 
+
+.panel#CustomerInfo > p {
+    padding: 0.5%;
+      
+
+}
+
+
+p#customerFormSubmit {
+    
+    padding-top: 60%;
+    padding-left: 40%;
+}
 
 
 
