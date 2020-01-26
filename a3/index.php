@@ -215,13 +215,13 @@
                   as World War II continues to rage on</p>
               </div>
               <div class='synopsisButtons'>
-                <button>Mon -</button>
-                <button>Tue -</button>
-                <button>Wed 12pm</button>
-                <button>Thu 12pm</button>
-                <button>Fri 12pm</button>
-                <button>Sat 9pm</button>
-                <button>Sun 9pm</button>
+                <button class='movieTime Monday' id='p4Mon'>Mon -</button>
+                <button class='movieTime Tuesday' id='p4Tue'>Tue -</button>
+                <button class='movieTime Wednesday' id='p4Wed'>Wed 12pm</button>
+                <button class='movieTime Thursday' id='p4Thu'>Thu 12pm</button>
+                <button class='movieTime Friday' id='p4Fri'>Fri 12pm</button>
+                <button class='movieTime Saturday' id='p4Sat'>Sat 9pm</button>
+                <button class='movieTime Sunday' id='p4Sun'>Sun 9pm</button>
               </div>
             </section>
             <section class="movieSynopsis" id="p1Synopsis" >
@@ -235,13 +235,13 @@
                     confrontation with Kylo Ren.</p>
               </div>
               <div class='synopsisButtons'>
-                <button>Mon 1200</button>
-                <button>Tue 1200</button>
-                <button>Wed 1800</button>
-                <button>Thu 1800</button>
-                <button>Fri 1800</button>
-                <button>Sat 1200</button>
-                <button>Sun 1200</button>
+                <button class='movieTime Monday' id='p1Mon'>Mon 1200</button>
+                <button class='movieTime Tuesday' id='p1Tue'>Tue 1200</button>
+                <button class='movieTime Wednesday' id='p1Wed'>Wed 1800</button>
+                <button class='movieTime Thursday' id='p1Thu'>Thu 1800</button>
+                <button class='movieTime Friday' id='p1Fri'>Fri 1800</button>
+                <button class='movieTime Saturday' id='p1Sat'>Sat 1200</button>
+                <button class='movieTime Sunday' id='p1Sun'>Sun 1200</button>
               </div>
             </section>
 
@@ -257,13 +257,13 @@
                     an adventure that soon turns into a journey of self-discovery.</p>
               </div>
               <div class='synopsisButtons'>
-                <button>Mon -</button>
-                <button>Tue -</button>
-                <button>Wed 2100</button>
-                <button>Thu 2100</button>
-                <button>Fri 2100</button>
-                <button>Sat 1800</button>
-                <button>Sun 1800</button>
+                <button class='movieTime Monday' id='p2Mon'>Mon -</button>
+                <button class='movieTime Tuesday' id='p2Tue'>Tue -</button>
+                <button class='movieTime Wednesday' id='p2Wed'>Wed 2100</button>
+                <button class='movieTime Thursday' id='p2Thu'>Thu 2100</button>
+                <button class='movieTime Friday' id='p2Fri'>Fri 2100</button>
+                <button class='movieTime Saturday' id='p2Sat'>Sat 1800</button>
+                <button class='movieTime Sunday' id='p2Sun'>Sun 1800</button>
               </div>
             </section>
 
@@ -279,13 +279,13 @@
                    the world.</p>
               </div>
               <div class='synopsisButtons'>
-                <button>Mon 1800</button>
-                <button>Tue 1800</button>
-                <button>Wed -</button>
-                <button>Thu -</button>
-                <button>Fri -</button>
-                <button>Sat 1500</button>
-                <button>Sun 1500</button>
+                <button class='movieTime Monday' id='p3Mon'>Mon 1800</button>
+                <button class='movieTime Tuesday' id='p3Tue'>Tue 1800</button>
+                <button class='movieTime Wednesday' id='p3Wed'>Wed -</button>
+                <button class='movieTime Thursday' id='p3Thu'>Thu -</button>
+                <button class='movieTime Friday' id='p3Fri' >Fri -</button>
+                <button class='movieTime Saturday' id='p3Sat'>Sat 1500</button>
+                <button class='movieTime Sunday' id='p3Sun' >Sun 1500</button>
               </div>
             </section>
 
@@ -491,6 +491,10 @@
                 
                 </p>
 
+                <input type='text' id='movieId' name='movie[id]' hidden>
+                <input type='text' id='movieDay' name='movie[day]' hidden>
+                <input type='text' id='movieHour' name='movie[hour]' hidden> 
+
               </div>
               <p id='customerFormSubmit' >
                 <input type='submit' value='Order'>
@@ -498,7 +502,7 @@
               <span id='totalOrderAmount'>
                 <label for='moneyField'>Total $</label>
                 <input type='number' id='moneyField' name='moneyField' placeholder='0.00'>
-              </span>
+              </span>              
             </form>
           </div>
         </article> 

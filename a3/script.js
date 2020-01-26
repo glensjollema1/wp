@@ -34,6 +34,7 @@ var totalSalePrice = 0.00;
 //variables for synopsis onclick listeners
 var posterListener = document.getElementsByClassName('poster');
 var synopsisPanels = document.getElementsByClassName('movieSynopsis');
+var timeButtons = document.getElementsByClassName('movieTime');
 
 
 
@@ -104,24 +105,73 @@ function alterSynopsisDisplay (clickedPoster)
 
     for (let j = 0; j < synopsisPanels.length; j++)
     {
-        let fuck = synopsis.id;
-        console.log(fuck);
-        fuck = toString(fuck);
+        let idString = toString(synopsis.id);
         let comparisonString = toString(synopsisPanels[j].id);
         
-        if (comparisonString === fuck)
+        if (comparisonString === idString)
         {
            synopsis.style.visibility = 'visible';
         }
-        else
-        {
-            synopsis.style.visibility = 'hidden';
-        }
-        console.log(synopsisPanels[j].id + ' ' + synopsisPanels[j].style.visibility);
+     
     }
 
 
    // console.log(clickedPoster.id);
+}
+
+//Updater for the price field in the booking form
+
+
+function checkWeekend(buttonPressed)
+{
+    let buttonId = buttonPressed.id;
+    let button = document.getElementById(buttonId);
+
+    if ((button.classList.contains(Sunday)) || (button.classList.constains(Saturday)))
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function cheapTickets(buttonPressed)
+{
+
+}
+
+function setMovieDayTime(buttonPressed)
+{
+    buttonId = buttonPressed.id;
+    console.log('you pressed ' + buttonId);
+
+    let button = document.getElementById(buttonId);
+
+    if((checkWeekend(button)) || (checkEarlyWeek(button)))
+    {
+        cheapTickets(button);
+    }
+    else
+    {
+        fullTickets(button);
+    }
+
+
+}
+
+function currentPrice(seat) 
+{  
+    var seatType = seat.id;
+    var amount = seat.value;
+    amount = parsInt(amount);
+    console.log("My id is " + seatType);
+    console.log("My value is " + amount);
+    //maybe switch here based on who called the function to find what the seat price should be
+    
+    
+    //Need to ensure that the calculation is rounded to 2dp
+    document.getElementById('moneyField').innerhtml = totalSalePrice.toFixed(2);
 }
 
 //initially set all synopsis panels to hidden
@@ -137,29 +187,24 @@ for (let i = 0; i < posterListener.length; i++)
     let currentId = posterListener[i].id;
     let element = document.getElementById(currentId);
 
-    element.onclick = function () {alterSynopsisDisplay(this) }
+    element.onclick = function () { alterSynopsisDisplay(this) }
 }
 
-//Updater for the price field in the booking form
-function currentPrice(seat) 
-{  
-    var seatType = seat.id;
-    var amount = seat.value;
-    amount = parsInt(amount);
-    console.log("My id is " + seatType);
-    console.log("My value is " + amount);
-    //maybe switch here based on who called the function to find what the seat price should be
-    
-    
-    //Need to ensure that the calculation is rounded to 2dp
-    document.getElementById('moneyField').innerhtml = totalSalePrice.toFixed(2);
+ 
+
+childStandardSeats.onchange = function () { currentPrice(this) }
+adultStandardSeats.onchange = function () { currentPrice(this) }
+concessionStandardSeats.onchange = function () { currentPrice(this) }
+childFCSeats.onchange = function () { currentPrice(this) }
+adultFCSeats.onchange = function () { currentPrice(this) }
+concessionFCSeats.onchange = function () { currentPrice(this) }
+
+
+for (let i = 0; i < timeButtons.length; i++)
+{
+    let currentId = timeButtons[i].id;
+    let element = document.getElementById(currentId);
+
+    element.onclick = function () { setMovieDayTime(this) }
 }
-
-
-    childStandardSeats.onchange = function () { currentPrice(this) }
-    adultStandardSeats.onchange = function () { currentPrice(this) }
-    concessionStandardSeats.onchange = function () { currentPrice(this) }
-    childFCSeats.onchange = function () { currentPrice(this) }
-    adultFCSeats.onchange = function () { currentPrice(this) }
-    concessionFCSeats.onchange = function () { currentPrice(this) }
 
