@@ -209,6 +209,13 @@ input {
 
 }
 
+select {
+    visibility: visible;
+    z-index: 11000;
+    background-color: white;
+
+}
+
 /*Due to the small size of the logo I am using this container to enable me to resize the image. This code/idea was adapted from
 	a stack overflow post found here https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css*/
 .logocontainer{
@@ -331,13 +338,16 @@ input {
 
 .trailer {
     position: absolute;
-    left: 50%;
-    top: 15%;
+    left: 45%;
+    top: 20%;
+    width: 50%;
+    height: 40%;
+    visibility: inherit;
 }
 
 .synopsisBox h2 {
     position: absolute;
-    left: 45%;
+    left: 40%;
 }
 
 .synopsisText h3 {
@@ -346,12 +356,15 @@ input {
     font-size: 200%;
     padding: 10%;
     white-space: pre;
+    visibility: inherit;
 }
 
 .synopsisText p {
     position: absolute;
-    left : 10%;
-    top: 45%;
+    left : 5%;
+    top: 20%;
+    width: 60%;
+    visibility: inherit;
 }
 
 .synopsisButtons {
@@ -361,6 +374,7 @@ input {
     top: 80%;
     float: left;
     cursor: pointer;
+    visibility: inherit;
 }
 
 .bookingCombo {
@@ -373,16 +387,7 @@ input {
 
 .bookingCombo select {
     display: block;
-    
    
-   
-}
-
-select {
-    visibility: visible;
-    z-index: 11000;
-    background-color: white;
-
 }
 
 
@@ -539,13 +544,15 @@ h2#upgradeHeader,
 
 #customerFormSubmit {
     
-    padding-top: 60%;
+    padding-top: 55%;
     padding-left: 70%;
+   
 }
 
 #totalOrderAmount {
-    padding-top: 60%;
+    padding-top: 45%;
     padding-left: 40%;
+    max-width: 10%;
 }
 
 

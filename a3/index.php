@@ -10,7 +10,7 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime('style.css'); ?>">
     <script src='../wireframe.js'></script>
-    <script src='script.js'></script>
+   
     <!--Web fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sacramento&display=swap" >
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela+Round&display=swap">
@@ -87,7 +87,7 @@
         </article>
         <article class='mainSection parallax' id='NowShowing'>
           <h2>Now Showing</h2>
-          <div class='panel' id='p1'>
+          <div class='panel poster' id='p1'>
             <img  src='../../media/SW_ROTS_poster.jpg' alt="Star Wars The Rise of Skywalker Poster">
             
             <h4 class='movTitle'>Star Wars TROS           M</h4>
@@ -115,7 +115,7 @@
               </tr>
             </table>
           </div>
-          <div class='panel' id='p2'>
+          <div class='panel poster' id='p2'>
             <img src='../../media/Frozen2_poster.jpg' alt="Frozen 2 Poster">
             
             <h4 class='movTitle'>Frozen 2           G</h4>
@@ -143,7 +143,7 @@
               </tr>
             </table>
           </div>
-          <div class='panel' id='p3'>
+          <div class='panel poster' id='p3'>
             <img src='../../media/AN_poster.jpg' alt="The Aeronauts Poster">
             
             <h4 class='movTitle'>The Aeronauts            M</h4>
@@ -171,7 +171,7 @@
               </tr>
             </table>
           </div>
-          <div class='panel' id='p4'>
+          <div class='panel poster' id='p4'>
             <img  src='../../media/JJR_poster.jpg' alt="JoJo Rabbit Poster">
             
             <h4 class='movTitle'>JoJo Rabbit            M</h4>
@@ -205,23 +205,92 @@
           <div class='synopsisBox'>
             <h2>Synopsis</h2>
             <!-- Code copied directly from youtube video embed snippet -->
-            <iframe class='trailer' width="560" height="315" src="https://www.youtube.com/embed/tL4McUzXfFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-            <div class='synopsisText'>
-              <h3> JoJo Rabbit                    M</h3>
-              <!-- plot taken from https://www.google.com/search?q=jojo+rabbit+plot&oq=jojo+rabbit+plot&aqs=chrome..69i57j0l7.4953j0j4&sourceid=chrome&ie=UTF-8 -->
-              <p class='plot'>Jojo is a lonely German boy who discovers that his single mother is hiding a Jewish girl in their 
-                attic. Aided only by his imaginary friend -- Adolf Hitler -- Jojo must confront his blind nationalism 
-                as World War II continues to rage on</p>
-            </div>
-            <div class='synopsisButtons'>
-              <button>Mon -</button>
-              <button>Tue -</button>
-              <button>Wed 12pm</button>
-              <button>Thu 12pm</button>
-              <button>Fri 12pm</button>
-              <button>Sat 9pm</button>
-              <button>Sun 9pm</button>
-            </div>
+            <section class="movieSynopsis" id="p4Synopsis">
+              <iframe class='trailer' width="50%" height="40%" src="https://www.youtube.com/embed/tL4McUzXfFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <div class='synopsisText'>
+                <h3> JoJo Rabbit                    M</h3>
+                <!-- plot taken from https://www.google.com/search?q=jojo+rabbit+plot&oq=jojo+rabbit+plot&aqs=chrome..69i57j0l7.4953j0j4&sourceid=chrome&ie=UTF-8 -->
+                <p class='plot'>Jojo is a lonely German boy who discovers that his single mother is hiding a Jewish girl in their 
+                  attic. Aided only by his imaginary friend -- Adolf Hitler -- Jojo must confront his blind nationalism 
+                  as World War II continues to rage on</p>
+              </div>
+              <div class='synopsisButtons'>
+                <button>Mon -</button>
+                <button>Tue -</button>
+                <button>Wed 12pm</button>
+                <button>Thu 12pm</button>
+                <button>Fri 12pm</button>
+                <button>Sat 9pm</button>
+                <button>Sun 9pm</button>
+              </div>
+            </section>
+            <section class="movieSynopsis" id="p1Synopsis" >
+            <iframe class='trailer' width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <div class='synopsisText'>
+                <h3> Star Wars TROS           M</h3>
+                <!-- plot taken from https://www.google.com/search?rlz=1C1CHBF_en-GBAU823AU834&ei=8L8sXveLO6fVz7sP97uH-Ac&q=star+wars+the+rise+of+skywalker+synopsis&oq=star+wars++synopsis&gs_l=psy-ab.1.0.0i7i30l3j0j0i7i30l6.7499.9032..10077...2.3..0.178.976.0j6......0....1..gws-wiz.......0i71j0i8i7i30j0i13.L-IdU2Rmkx8 -->
+                <p class='plot'>When it's discovered that the evil Emperor Palpatine did not die at the hands of Darth Vader,
+                   the rebels must race against the clock to find out his whereabouts. Finn and Poe lead the Resistance
+                   to put a stop to the First Order's plans to form a new Empire, while Rey anticipates her inevitable 
+                    confrontation with Kylo Ren.</p>
+              </div>
+              <div class='synopsisButtons'>
+                <button>Mon 1200</button>
+                <button>Tue 1200</button>
+                <button>Wed 1800</button>
+                <button>Thu 1800</button>
+                <button>Fri 1800</button>
+                <button>Sat 1200</button>
+                <button>Sun 1200</button>
+              </div>
+            </section>
+
+            <section class="movieSynopsis" id="p2Synopsis" >
+            <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/Zi4LMpSDccc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <div class='synopsisText'>
+                <h3> Frozen 2           PG</h3>
+                <!-- plot taken from https://www.google.com/search?rlz=1C1CHBF_en-GBAU823AU834&ei=_L8sXoa8BvTZz7sP6_Kn8AM&q=frozen+2+synopsis&oq=frozen+2+sy&gs_l=psy-ab.3.0.0l10.1381064.1384000..1385134...0.3..1.896.2116.0j2j0j1j0j1j1......0....1..gws-wiz.......0i71j0i67j0i131.HNIaPcMWirs -->
+                <p class='plot'>Elsa the Snow Queen has an extraordinary gift -- the power to create
+                   ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle,
+                    Elsa finds herself strangely unsettled. After hearing a mysterious voice call out
+                    to her, Elsa travels to the enchanted forests and dark seas beyond her kingdom --
+                    an adventure that soon turns into a journey of self-discovery.</p>
+              </div>
+              <div class='synopsisButtons'>
+                <button>Mon -</button>
+                <button>Tue -</button>
+                <button>Wed 2100</button>
+                <button>Thu 2100</button>
+                <button>Fri 2100</button>
+                <button>Sat 1800</button>
+                <button>Sun 1800</button>
+              </div>
+            </section>
+
+            <section class="movieSynopsis" id="p3Synopsis" >
+            <iframe class='trailer' width="560" height="315" src="https://www.youtube.com/embed/Rm4VnwCtQO8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+              <div class='synopsisText'>
+                <h3> The Aeronauts           M</h3>
+                <!-- plot taken from https://www.google.com/search?rlz=1C1CHBF_en-GBAU823AU834&ei=8L8sXveLO6fVz7sP97uH-Ac&q=star+wars+the+rise+of+skywalker+synopsis&oq=star+wars++synopsis&gs_l=psy-ab.1.0.0i7i30l3j0j0i7i30l6.7499.9032..10077...2.3..0.178.976.0j6......0....1..gws-wiz.......0i71j0i8i7i30j0i13.L-IdU2Rmkx8 -->
+                <p class='plot'>In 1862 headstrong scientist James Glaisher and wealthy young widow
+                   Amelia Wren mount a balloon expedition to fly higher than anyone in history. As 
+                   their perilous ascent reduces their chances of survival, the unlikely duo soon discover 
+                   things about themselves -- and each other -- that help both of them find their place in
+                   the world.</p>
+              </div>
+              <div class='synopsisButtons'>
+                <button>Mon 1800</button>
+                <button>Tue 1800</button>
+                <button>Wed -</button>
+                <button>Thu -</button>
+                <button>Fri -</button>
+                <button>Sat 1500</button>
+                <button>Sun 1500</button>
+              </div>
+            </section>
+
+
+
           </div>
         </article>
         <article class='mainSection parallax' id='PricingGuide'>
@@ -276,9 +345,9 @@
                 <div class='bookingCombo' id='standard'>
                   <p class='AdultsAlign'>
                    
-                  <select id='Adults' name='AdultStandard'>
+                  <select id='AdultStandard' name='AdultStandard'>
                     
-                      <option value='0' selected>0</option>
+                      <option value='0'>0</option>
                       <option value='1'>1</option>
                       <option value='2'>2</option>
                       <option value='3'>3</option>
@@ -312,7 +381,7 @@
                   <p class='ChildrenAlign'>
                   
                   <select id='ChildrenStandard' name='ChildrenStandard'>
-                    <option value='0' selected>0</option>
+                    <option value='0' >0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -340,7 +409,7 @@
                    
                   <select id='AdultFClass' name='AdultFclass'>
                     
-                      <option value='0' selected>0</option>
+                      <option value='0'>0</option>
                       <option value='1'>1</option>
                       <option value='2'>2</option>
                       <option value='3'>3</option>
@@ -357,7 +426,7 @@
                   <p class='ConcessionAlign'>  
                   
                   <select id='ConcessionFClass' name='ConcessionFClass'>
-                    <option value='0' selected>0</option>
+                    <option value='0'>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -373,8 +442,8 @@
                   </p>
                   <p class='ChildrenAlign'>
                   
-                  <select id='ChildrenStandard' name='ChildrenStandard'>
-                    <option value='0' selected>0</option>
+                  <select id='ChildrenFClass' name='ChildrenFClass'>
+                    <option value='0'>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -418,7 +487,7 @@
                 </p>
                 <p>
                 <label for='ccExpiry'>Expiry:</label>
-                <input type='month' name='ccExpiry' placeholder='YYYY/MM'/>
+                <input type='month' name='ccExpiry' min="2020/01" placeholder='YYYY/MM'/>
                 
                 </p>
 
@@ -426,10 +495,10 @@
               <p id='customerFormSubmit' >
                 <input type='submit' value='Order'>
               </p>
-              <p id='totalOrderAmount'>
+              <span id='totalOrderAmount'>
                 <label for='moneyField'>Total $</label>
-                <input type='number' id='moneyField' name='moneyField'>
-              </p>
+                <input type='number' id='moneyField' name='moneyField' placeholder='0.00'>
+              </span>
             </form>
           </div>
         </article> 
@@ -444,7 +513,9 @@
       Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+      
     </footer>
 
   </body>
+  <script src='script.js'></script>
 </html>
