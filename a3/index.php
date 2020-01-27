@@ -345,9 +345,9 @@
                 <div class='bookingCombo' id='standard'>
                   <p class='AdultsAlign'>
                    
-                  <select id='AdultStandard' name='AdultStandard'>
+                  <select id='AdultStandard' name='seats[STA]'>
                     
-                      <option value='0'>0</option>
+                      <option value='0' selected>0</option>
                       <option value='1'>1</option>
                       <option value='2'>2</option>
                       <option value='3'>3</option>
@@ -359,11 +359,11 @@
                       <option value='9'>9</option>
                       <option value='10'>10</option>
                     </select>
-                    <label for='Adults'>Adults</label>
+                    <label for='seats[STA]'>Adults</label>
                   </p>
                   <p class='ConcessionAlign'>  
                   
-                  <select id='ConcessionStandard' name='ConcessionStandard'>
+                  <select id='ConcessionStandard' name='seats[STP]'>
                     <option value='0' selected>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
@@ -376,12 +376,12 @@
                     <option value='9'>9</option>
                     <option value='10'>10</option>
                   </select>
-                  <label for='ConcessionStandard'>Concession</label>
+                  <label for='seats[STP]'>Concession</label>
                   </p>
                   <p class='ChildrenAlign'>
                   
-                  <select id='ChildrenStandard' name='ChildrenStandard'>
-                    <option value='0' >0</option>
+                  <select id='ChildrenStandard' name='seats[STC]'>
+                    <option value='0' selected>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -393,7 +393,7 @@
                     <option value='9'>9</option>
                     <option value='10'>10</option>
                   </select>
-                  <label for='ChildrenStandard'>Children</label>
+                  <label for='seats[STC]'>Children</label>
                   </p>
 
                 </div>
@@ -407,9 +407,9 @@
                 <div class='bookingCombo' id='FClass'>
                   <p class='AdultsAlign'>
                    
-                  <select id='AdultFClass' name='AdultFclass'>
+                  <select id='AdultFClass' name='seats[FCA]'>
                     
-                      <option value='0'>0</option>
+                      <option value='0' selected>0</option>
                       <option value='1'>1</option>
                       <option value='2'>2</option>
                       <option value='3'>3</option>
@@ -421,12 +421,12 @@
                       <option value='9'>9</option>
                       <option value='10'>10</option>
                     </select>
-                    <label for='AdultFClass'>Adults</label>
+                    <label for='seats[FCA]'>Adults</label>
                   </p>
                   <p class='ConcessionAlign'>  
                   
-                  <select id='ConcessionFClass' name='ConcessionFClass'>
-                    <option value='0'>0</option>
+                  <select id='ConcessionFClass' name='seats[FCP]'>
+                    <option value='0' selected>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -438,12 +438,12 @@
                     <option value='9'>9</option>
                     <option value='10'>10</option>
                   </select>
-                  <label for='ConcessionFClass'>Concession</label>
+                  <label for='seats[FCP]'>Concession</label>
                   </p>
                   <p class='ChildrenAlign'>
                   
-                  <select id='ChildrenFClass' name='ChildrenFClass'>
-                    <option value='0'>0</option>
+                  <select id='ChildrenFClass' name='seats[FCC]'>
+                    <option value='0' selected>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
@@ -455,7 +455,7 @@
                     <option value='9'>9</option>
                     <option value='10'>10</option>
                   </select>
-                  <label for='ChildrenFClass'>Children</label>
+                  <label for='seats[FCC]'>Children</label>
                   </p>
 
                 </div>
@@ -467,27 +467,27 @@
                 <h3>Customer Info</h3>
                 <p>
                 <label for='customerName'>Name: </label>
-                <input type='text' name='customerName' placeholder='eg. John Smith'/>
+                <input type='text' name='cust[name]' placeholder='eg. John Smith'/>
                 
                 </p>
                 <p>
                 <label for='customerEmail'>Email: </label>
-                <input type='email' name='customerEmail' placeholder='eg. bat@man.com'/>
+                <input type='email' name='cust[email]' placeholder='eg. bat@man.com'/>
                
                 </p>
                 <p>
                 <label for='customerPhone'>Mobile: </label>
-                <input type='number' name='customerPhone' placeholder='eg. 0412345678 (no spaces)'/>
+                <input type='number' name='cust[mobile]' placeholder='eg. 0412345678 (no spaces)'/>
                 
                 </p>
                 <p>
                 <label for='customerCC'>Credit Card: </label>
-                <input type='number' name='customerCC' placeholder='1234567890123456 (no spaces)'/>
+                <input type='number' name='cust[card]' placeholder='1234567890123456 (no spaces)'/>
                
                 </p>
                 <p>
                 <label for='ccExpiry'>Expiry:</label>
-                <input type='month' name='ccExpiry' min="2020/01" placeholder='YYYY/MM'/>
+                <input type='month' name='cust[expiry]' min="2020/01" placeholder='YYYY/MM'/>
                 
                 </p>
 

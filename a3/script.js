@@ -3,20 +3,20 @@
 
 
 //Discounted is for mon-tue and 12pm Wed-Fri
-var discountedPriceArray = {AdultStandard: 15.00, 
-                            ConcessionStandard: 13.00, 
-                            ChildrenStandard: 11.00,
-                            AdultFClass: 25.00,
-                            ConcessionFClass: 23.00,
-                            ChildrenFClass: 21.00
+var discountedPriceArray = {AdultStandard: {price: "15.00"}, 
+                            ConcessionStandard: {price: "13.00"}, 
+                            ChildrenStandard: {price: "11.00"},
+                            AdultFClass: {price: "25.00"},
+                            ConcessionFClass: {price: "23.00"},
+                            ChildrenFClass: {price: "21.00"}
                         }
 //Full price for Sat sun and after 12pm wed-fri                            
-var fullPriceArray = {AdultStandard: 20.50, 
-                    ConcessionStandard: 18.00, 
-                    ChildrenStandard: 15.50,
-                    AdultFClass: 30.00,
-                    ConcessionFClass: 27.50,
-                    ChildrenFClass: 25.00
+var fullPriceArray = {AdultStandard: {price: "20.50"}, 
+                    ConcessionStandard: {price: "18.00"}, 
+                    ChildrenStandard: {price: "15.50"},
+                    AdultFClass: {price: "30.00"},
+                    ConcessionFClass: {price: "27.50"},
+                    ChildrenFClass: {price: "25.00"}
                 }
 
 
