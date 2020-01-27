@@ -300,7 +300,6 @@ form {
     position: absolute;
     max-width: 75%;
     max-height: 75%;
-    padding: 10%;
     left: 5%;
     top: 10%;
 }
@@ -345,8 +344,8 @@ form {
     position: absolute;
     left: 45%;
     top: 20%;
-    width: 50%;
-    height: 40%;
+    width: 40%;
+    height: 60%;
     visibility: inherit;
 }
 
