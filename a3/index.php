@@ -491,18 +491,20 @@
                 
                 </p>
 
-                <input type='text' id='movieId' name='movie[id]' hidden>
-                <input type='text' id='movieDay' name='movie[day]' hidden>
-                <input type='text' id='movieHour' name='movie[hour]' hidden> 
+                <input class='hide' type='text' id='movieId' name='movie[id]' hidden>
+                <input class='hide' type='text' id='movieDay' name='movie[day]' hidden>
+                <input class='hide' type='text' id='movieHour' name='movie[hour]' hidden> 
 
               </div>
               <p id='customerFormSubmit' >
-                <input type='submit' value='Order'>
+                
               </p>
-              <span id='totalOrderAmount'>
+              
+              <div class="panel" id="customerFormSubmit">
                 <label for='moneyField'>Total $</label>
-                <input type='number' id='moneyField' name='moneyField' placeholder='0.00'>
-              </span>              
+                <input type='number' id='moneyField' name='moneyField' placeholder='0.00' readonly>
+                <input id="orderButton" type='submit' value='Order'>
+              </div>              
             </form>
           </div>
         </article> 

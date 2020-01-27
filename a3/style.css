@@ -204,7 +204,7 @@ nav li a.currentLink{
 
 input {
     display: inline-block;
-    float: ;
+   
     
 
 }
@@ -214,6 +214,11 @@ select {
     z-index: 11000;
     background-color: white;
 
+}
+
+form {
+    width: 100%;
+    height: 100%;
 }
 
 /*Due to the small size of the logo I am using this container to enable me to resize the image. This code/idea was adapted from
@@ -381,13 +386,20 @@ select {
     min-height: 30%;
     border : 1px;
     border-color: white;
+    position: absolute;
+    width: 100%;
 }
 
 
 
 .bookingCombo select {
     display: block;
+    
    
+}
+
+input.hide {
+    display: none;
 }
 
 
@@ -542,10 +554,14 @@ h2#upgradeHeader,
 }
 
 
-#customerFormSubmit {
+.panel#customerFormSubmit {
     
-    padding-top: 55%;
-    padding-left: 70%;
+   left: 48%;
+   top: 80%;
+   border: solid;
+   border-color: #FFA71A;
+   height: 10%;
+   width: 50%;
    
 }
 
@@ -553,6 +569,10 @@ h2#upgradeHeader,
     padding-top: 45%;
     padding-left: 40%;
     max-width: 10%;
+}
+
+#orderButton {
+    left: 50%;
 }
 
 
