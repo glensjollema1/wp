@@ -93,25 +93,25 @@
             <h4 class='movTitle'>Star Wars TROS           M</h4>
             <table>
               <tr>
-                <td>Mon</td><td>1200</td>
+                <td>Mon</td><td>12pm</td>
               </tr>
               <tr>
-                <td>Tue</td><td>1200</td>
+                <td>Tue</td><td>12pm</td>
               </tr>
               <tr>
-                <td>Wed</td><td>1800</td>
+                <td>Wed</td><td>6pm</td>
               </tr>
               <tr>
-                <td>Thu</td><td>1800</td>
+                <td>Thu</td><td>6pm</td>
               </tr>
               <tr>
-                <td>Fri</td><td>1800</td>
+                <td>Fri</td><td>6pm</td>
               </tr>
               <tr>
-                <td>Sat</td><td>1200</td>
+                <td>Sat</td><td>12pm</td>
               </tr>
               <tr>
-                <td>Sun</td><td>1200</td>
+                <td>Sun</td><td>12pm</td>
               </tr>
             </table>
           </div>
@@ -121,25 +121,25 @@
             <h4 class='movTitle'>Frozen 2           G</h4>
             <table>
               <tr>
-                <td>Mon</td><td>-</td>
+                <td>Mon</td><td> - </td>
               </tr>
               <tr>
-                <td>Tue</td><td>-</td>
+                <td>Tue</td><td> - </td>
               </tr>
               <tr>
-                <td>Wed</td><td>2100</td>
+                <td>Wed</td><td>9pm</td>
               </tr>
               <tr>
-                <td>Thu</td><td>2100</td>
+                <td>Thu</td><td>9pm</td>
               </tr>
               <tr>
-                <td>Fri</td><td>2100</td>
+                <td>Fri</td><td>9pm</td>
               </tr>
               <tr>
-                <td>Sat</td><td>1800</td>
+                <td>Sat</td><td>6pm</td>
               </tr>
               <tr>
-                <td>Sun</td><td>1800</td>
+                <td>Sun</td><td>6pm</td>
               </tr>
             </table>
           </div>
@@ -149,25 +149,25 @@
             <h4 class='movTitle'>The Aeronauts            M</h4>
             <table>
               <tr>
-                <td>Mon</td><td>1800</td>
+                <td>Mon</td><td>6pm</td>
               </tr>
               <tr>
-                <td>Tue</td><td>1800</td>
+                <td>Tue</td><td>6pm</td>
               </tr>
               <tr>
-                <td>Wed</td><td>-</td>
+                <td>Wed</td><td> - </td>
               </tr>
               <tr>
-                <td>Thu</td><td>-</td>
+                <td>Thu</td><td> - </td>
               </tr>
               <tr>
-                <td>Fri</td><td>-</td>
+                <td>Fri</td><td> - </td>
               </tr>
               <tr>
-                <td>Sat</td><td>1500</td>
+                <td>Sat</td><td>3pm</td>
               </tr>
               <tr>
-                <td>Sun</td><td>1500</td>
+                <td>Sun</td><td>3pm</td>
               </tr>
             </table>
           </div>
@@ -177,25 +177,25 @@
             <h4 class='movTitle'>JoJo Rabbit            M</h4>
             <table>
               <tr>
-                <td>Mon</td><td>-</td>
+                <td>Mon</td><td> - </td>
               </tr>
               <tr>
-                <td>Tue</td><td>-</td>
+                <td>Tue</td><td> - </td>
               </tr>
               <tr>
-                <td>Wed</td><td>1200</td>
+                <td>Wed</td><td>12pm</td>
               </tr>
               <tr>
-                <td>Thu</td><td>1200</td>
+                <td>Thu</td><td>12pm</td>
               </tr>
               <tr>
-                <td>Fri</td><td>1200</td>
+                <td>Fri</td><td>12pm</td>
               </tr>
               <tr>
-                <td>Sat</td><td>2100</td>
+                <td>Sat</td><td>9pm</td>
               </tr>
               <tr>
-                <td>Sun</td><td>2100</td>
+                <td>Sun</td><td>9pm</td>
               </tr>
             </table>
           </div>
@@ -215,13 +215,11 @@
                   as World War II continues to rage on</p>
               </div>
               <div class='synopsisButtons'>
-                <button class='movieTime Monday' id='p4Mon'>Mon -</button>
-                <button class='movieTime Tuesday' id='p4Tue'>Tue -</button>
-                <button class='movieTime Wednesday' id='p4Wed'>Wed 12pm</button>
-                <button class='movieTime Thursday' id='p4Thu'>Thu 12pm</button>
-                <button class='movieTime Friday' id='p4Fri'>Fri 12pm</button>
-                <button class='movieTime Saturday' id='p4Sat'>Sat 9pm</button>
-                <button class='movieTime Sunday' id='p4Sun'>Sun 9pm</button>
+                <button class='movieTime Wednesday' id='p4Wed'>Wednesday 12pm</button>
+                <button class='movieTime Thursday' id='p4Thu'>Thursday 12pm</button>
+                <button class='movieTime Friday' id='p4Fri'>Friday 12pm</button>
+                <button class='movieTime Saturday' id='p4Sat'>Saturday 9pm</button>
+                <button class='movieTime Sunday' id='p4Sun'>Sunday 9pm</button>
               </div>
             </section>
             <section class="movieSynopsis" id="p1Synopsis" >
@@ -235,13 +233,13 @@
                     confrontation with Kylo Ren.</p>
               </div>
               <div class='synopsisButtons'>
-                <button class='movieTime Monday' id='p1Mon'>Mon 1200</button>
-                <button class='movieTime Tuesday' id='p1Tue'>Tue 1200</button>
-                <button class='movieTime Wednesday' id='p1Wed'>Wed 1800</button>
-                <button class='movieTime Thursday' id='p1Thu'>Thu 1800</button>
-                <button class='movieTime Friday' id='p1Fri'>Fri 1800</button>
-                <button class='movieTime Saturday' id='p1Sat'>Sat 1200</button>
-                <button class='movieTime Sunday' id='p1Sun'>Sun 1200</button>
+                <button class='movieTime Monday' id='p1Mon'>Monday 12pm</button>
+                <button class='movieTime Tuesday' id='p1Tue'>Tuesday 12pm</button>
+                <button class='movieTime Wednesday' id='p1Wed'>Wednesday 6pm</button>
+                <button class='movieTime Thursday' id='p1Thu'>Thursday 6pm</button>
+                <button class='movieTime Friday' id='p1Fri'>Friday 6pm</button>
+                <button class='movieTime Saturday' id='p1Sat'>Saturday 12pm</button>
+                <button class='movieTime Sunday' id='p1Sun'>Sunday 12pm</button>
               </div>
             </section>
 
@@ -257,13 +255,12 @@
                     an adventure that soon turns into a journey of self-discovery.</p>
               </div>
               <div class='synopsisButtons'>
-                <button class='movieTime Monday' id='p2Mon'>Mon -</button>
-                <button class='movieTime Tuesday' id='p2Tue'>Tue -</button>
-                <button class='movieTime Wednesday' id='p2Wed'>Wed 2100</button>
-                <button class='movieTime Thursday' id='p2Thu'>Thu 2100</button>
-                <button class='movieTime Friday' id='p2Fri'>Fri 2100</button>
-                <button class='movieTime Saturday' id='p2Sat'>Sat 1800</button>
-                <button class='movieTime Sunday' id='p2Sun'>Sun 1800</button>
+               
+                <button class='movieTime Wednesday' id='p2Wed'>Wednesday 9pm</button>
+                <button class='movieTime Thursday' id='p2Thu'>Thursday 9pm</button>
+                <button class='movieTime Friday' id='p2Fri'>Friday 9pm</button>
+                <button class='movieTime Saturday' id='p2Sat'>Saturday 6pm</button>
+                <button class='movieTime Sunday' id='p2Sun'>Sunday 6pm</button>
               </div>
             </section>
 
@@ -279,13 +276,10 @@
                    the world.</p>
               </div>
               <div class='synopsisButtons'>
-                <button class='movieTime Monday' id='p3Mon'>Mon 1800</button>
-                <button class='movieTime Tuesday' id='p3Tue'>Tue 1800</button>
-                <button class='movieTime Wednesday' id='p3Wed'>Wed -</button>
-                <button class='movieTime Thursday' id='p3Thu'>Thu -</button>
-                <button class='movieTime Friday' id='p3Fri' >Fri -</button>
-                <button class='movieTime Saturday' id='p3Sat'>Sat 1500</button>
-                <button class='movieTime Sunday' id='p3Sun' >Sun 1500</button>
+                <button class='movieTime Monday' id='p3Mon'>Monday 6pm</button>
+                <button class='movieTime Tuesday' id='p3Tue'>Tuesday 6pm</button>
+                <button class='movieTime Saturday' id='p3Sat'>Saturday 3pm</button>
+                <button class='movieTime Sunday' id='p3Sun' >Sunday 3pm</button>
               </div>
             </section>
 
@@ -339,6 +333,7 @@
         </article>
         <article class='mainSection parallax' id='BookNow'>
           <div class='bookingBox'>
+          <h3 id="bookingMovieTitle">Select Movie from Now Showing</h3><h3 id="bookingMovieTime">Select Time from Synopsis</h3> 
             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" onsubmit="return checkForm()">
               <div class='panel' id='standardBooking'> 
                 <h3>Standard Seating</h3>
@@ -502,7 +497,7 @@
               
               <div class="panel" id="customerFormSubmit">
                 <label for='moneyField'>Total $</label>
-                <input type='number' id='moneyField' name='moneyField' placeholder='0.00' readonly>
+                <input type='text' id='moneyField' name='moneyField' placeholder='0.00' readonly/>>
                 <input id="orderButton" type='submit' value='Order'>
               </div>              
             </form>
